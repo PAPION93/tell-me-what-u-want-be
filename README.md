@@ -48,3 +48,16 @@
 
 # 시작 
 > 2020-04-19 laravel, react 맛보고 와서 진짜 시작  
+
+### 개발환경 세팅
+0. `cd /var/www/html`
+1. `docker-compose up -d --build`
+2. `laravel new .`
+3. `composer update`
+4. `cp .env.example .env`
+5. `php artisan ket:generate`
+6. localhost 접속 확인
+
+### React 세팅
+7. `composer require laravel/ui`
+8. `php artisan ui react`
