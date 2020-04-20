@@ -69,3 +69,8 @@
 10. `npm i react-router-dom`
 11. `npm run dev`
 12. Example Component 출력 확인
+
+### Material UI
+
+`npm install @material-ui/core`  
+`npm install @material-ui/icons`
