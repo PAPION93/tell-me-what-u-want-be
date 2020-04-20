@@ -3,7 +3,7 @@
 > 현재위치와 음식종류 그리고 +a 로 최적의 음식점을 찾아보자  
 > 2020-01-06 첫 작성, 최대 일주일간 아이디어만 내볼 것  
 > 2020-01-11 추가작성  
-> 2020-01-13 시작예정  
+> 2020-01-13 시작예정
 
 # 시작 전
 
@@ -31,6 +31,7 @@
     -   1차 데드라인 : 4/30
 
 ## 3. 기능
+
 -   가. 현위치 또는 위치검색으로 시작
 -   나. 원하는 음식 종류 필터링 또는 선정
 -   다. 음식점 선택
@@ -46,10 +47,12 @@
 
 ---
 
-# 시작 
-> 2020-04-19 laravel, react 맛보고 와서 진짜 시작  
+# 시작
+
+> 2020-04-19 laravel, react 맛보고 와서 진짜 시작
 
 ### 개발환경 세팅
+
 0. `cd /var/www/html`
 1. `docker-compose up -d --build`
 2. `laravel new .`
@@ -59,5 +62,10 @@
 6. localhost 접속 확인
 
 ### React 세팅
+
 7. `composer require laravel/ui`
 8. `php artisan ui react`
+9. `npm install`
+10. `npm i react-router-dom`
+11. `npm run dev`
+12. Example Component 출력 확인
