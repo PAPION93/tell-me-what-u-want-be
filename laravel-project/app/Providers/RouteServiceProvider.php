@@ -34,7 +34,7 @@ class RouteServiceProvider extends ServiceProvider
 
         parent::boot();
     }
-K
+
     /**
      * Define the routes for the application.
      *

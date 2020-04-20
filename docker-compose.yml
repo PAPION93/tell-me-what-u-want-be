@@ -2,13 +2,13 @@ version: "3.7"
 
 services:
   db:
-    container_name: db
+    container_name: tell-me-db
     build: ./mariadb
     image: custom-mariadb
     restart: always
     environment:
       - TZ=Asia/Seoul
-      - MYSQL_ROOT_PASSWROD=secret
+      - MYSQL_ROOT_PASSWORD=secret
       - MYSQL_DATABASE=LARAVELDB
       - MYSQL_USER=laravel
       - MYSQL_PASSWORD=secret
@@ -22,9 +22,11 @@ services:
       - laravel
 
   laravel:
-    # container_name: app
-    build: .
-    image: custom-laravel
+    # docker-compose scale 설정시 continer_name 주석
+    container_name: tell-me-app
+    # build: .
+    # image: custom-laravel
+    image: papion93/docker-laravel:0.2
     restart: always
     volumes:
       - ./laravel-project:/var/www/html
@@ -32,10 +34,10 @@ services:
       - laravel
 
   nginx:
-    container_name: proxy
+    container_name: tell-me-proxy
     image: nginx:latest
     ports:
-      - 80:80
+      - 10080:80
       - 443:443
     restart: always
     volumes:
