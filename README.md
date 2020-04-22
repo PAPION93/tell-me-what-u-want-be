@@ -53,12 +53,12 @@
 
 ### 개발환경 세팅
 
-0. `cd /var/www/html`
-1. `docker-compose up -d --build`
+0. `docker-compose up -d --build`
+1. `cd /var/www/html`
 2. `laravel new .`
 3. `composer update`
 4. `cp .env.example .env`
-5. `php artisan ket:generate`
+5. `php artisan key:generate`
 6. localhost 접속 확인
 
 ### React 세팅

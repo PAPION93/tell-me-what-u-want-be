@@ -96219,7 +96219,7 @@ function AppAppBar(props) {
     color: "inherit",
     className: classes.title,
     href: "/premium-themes/onepirate/"
-  }, 'onepirate'), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+  }, 'Tell me what you want'), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
     className: classes.right
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core_Link__WEBPACK_IMPORTED_MODULE_4__["default"], {
     color: "inherit",
@@ -97385,8 +97385,8 @@ function withRoot(Component) {
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-__webpack_require__(/*! D:\Github\Repository\tell-me-what-u-want\laravel-project\resources\js\app.js */"./resources/js/app.js");
-module.exports = __webpack_require__(/*! D:\Github\Repository\tell-me-what-u-want\laravel-project\resources\sass\app.scss */"./resources/sass/app.scss");
+__webpack_require__(/*! D:\Github\tell-me-what-u-want\laravel-project\resources\js\app.js */"./resources/js/app.js");
+module.exports = __webpack_require__(/*! D:\Github\tell-me-what-u-want\laravel-project\resources\sass\app.scss */"./resources/sass/app.scss");
 
 
 /***/ })
