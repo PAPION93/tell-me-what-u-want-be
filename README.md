@@ -70,6 +70,13 @@
 11. `npm run dev`
 12. Example Component 출력 확인
 
+13. prop-types 유효성검사  
+`npm i prop-types` 
+14. axios API 요청  
+`npm i axios`  
+15. router  
+`npm install react-router-dom` 
+
 ### Material UI
 
 `npm install @material-ui/core`  
