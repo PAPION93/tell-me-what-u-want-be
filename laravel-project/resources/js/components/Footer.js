@@ -1,160 +1,73 @@
-import React from 'react';
-import { makeStyles } from '@material-ui/core/styles';
-import Grid from '@material-ui/core/Grid';
-import MaterialLink from '@material-ui/core/Link';
-import Container from '@material-ui/core/Container';
-import Typography from '../modules/components/Typography';
-import TextField from '../modules/components/TextField';
-import { Link } from 'react-router-dom'
+import React from "react";
+import "./Home.css";
 
-function Copyright() {
-    return (
-        <React.Fragment>
-            {'© '}
-            <MaterialLink color="inherit" href="https://material-ui.com/">
-                Your Website
-            </MaterialLink>{' '}
-            {new Date().getFullYear()}
-        </React.Fragment>
-    );
+class Home extends React.Component {
+    render() {
+        return (
+            <footer id="i5hkyi" className="footer-under">
+                <div className="container-width">
+                    <div id="i7d7pb" className="footer-container">
+                        <div className="foot-lists">
+                            <div className="foot-list">
+                                <div className="foot-list-title">About us</div>
+                                <div className="foot-list-item">Contact</div>
+                                <div className="foot-list-item">Events</div>
+                                <div className="foot-list-item">Company</div>
+                                <div className="foot-list-item">Jobs</div>
+                                <div className="foot-list-item">Blog</div>
+                            </div>
+                            <div className="foot-list">
+                                <div className="foot-list-title">Services</div>
+                                <div className="foot-list-item">Education</div>
+                                <div className="foot-list-item">Partner</div>
+                                <div className="foot-list-item">Community</div>
+                                <div className="foot-list-item">Forum</div>
+                                <div className="foot-list-item">Download</div>
+                                <div className="foot-list-item">Upgrade</div>
+                            </div>
+                            <div className="clearfix"></div>
+                        </div>
+                        <div className="form-sub">
+                            <div className="foot-form-cont">
+                                <div id="iqo71n" className="foot-form-title">
+                                    Subscribe
+                                </div>
+                                <div className="foot-form-desc">
+                                    Subscribe to our newsletter to receive
+                                    exclusive offers and the latest news
+                                </div>
+                                <input
+                                    name="name"
+                                    placeholder="Name"
+                                    id="i90sbg"
+                                    className="sub-input"
+                                />
+                                <input
+                                    name="email"
+                                    placeholder="Email"
+                                    className="sub-input"
+                                />
+                                <button type="button" className="sub-btn">
+                                    Submit
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div className="copyright">
+                    <div id="i6sgea" className="container-width">
+                        <div id="i5joor" className="made-with">
+                            made with GrapesJS
+                        </div>
+                        <div className="foot-social-btns">
+                            facebook twitter linkedin mail
+                        </div>
+                        <div className="clearfix"></div>
+                    </div>
+                </div>
+            </footer>
+        );
+    }
 }
 
-const useStyles = makeStyles((theme) => ({
-    root: {
-        display: 'flex',
-        backgroundColor: theme.palette.secondary.light,
-    },
-    container: {
-        marginTop: theme.spacing(8),
-        marginBottom: theme.spacing(8),
-        display: 'flex',
-    },
-    iconsWrapper: {
-        height: 120,
-    },
-    icons: {
-        display: 'flex',
-    },
-    icon: {
-        width: 48,
-        height: 48,
-        display: 'flex',
-        justifyContent: 'center',
-        alignItems: 'center',
-        backgroundColor: theme.palette.warning.main,
-        marginRight: theme.spacing(1),
-        '&:hover': {
-            backgroundColor: theme.palette.warning.dark,
-        },
-    },
-    list: {
-        margin: 0,
-        listStyle: 'none',
-        padding: 0,
-    },
-    listItem: {
-        paddingTop: theme.spacing(0.5),
-        paddingBottom: theme.spacing(0.5),
-    },
-    language: {
-        marginTop: theme.spacing(1),
-        width: 150,
-    },
-}));
-
-const LANGUAGES = [
-    {
-        code: 'en-US',
-        name: 'English',
-    },
-    {
-        code: 'fr-FR',
-        name: 'Français',
-    },
-];
-
-export default function AppFooter() {
-    const classes = useStyles();
-
-    return (
-        <Typography component="footer" className={classes.root}>
-            <Container className={classes.container}>
-                <Grid container spacing={5}>
-                    <Grid item xs={6} sm={4} md={3}>
-                        <Grid
-                            container
-                            direction="column"
-                            justify="flex-end"
-                            className={classes.iconsWrapper}
-                            spacing={2}
-                        >
-                            <Grid item className={classes.icons}>
-                                <a href="https://material-ui.com/" className={classes.icon}>
-                                    <img src="/static/themes/onepirate/appFooterFacebook.png" alt="Facebook" />
-                                </a>
-                                <a href="https://twitter.com/MaterialUI" className={classes.icon}>
-                                    <img src="/static/themes/onepirate/appFooterTwitter.png" alt="Twitter" />
-                                </a>
-                            </Grid>
-                            <Grid item>
-                                <Copyright />
-                            </Grid>
-                        </Grid>
-                    </Grid>
-                    <Grid item xs={6} sm={4} md={2}>
-                        <Typography variant="h6" marked="left" gutterBottom>
-                            Legal
-                        </Typography>
-                        <ul className={classes.list}>
-                            <li className={classes.listItem}>
-                                <Link to="/go">Terms</Link>
-                            </li>
-                            <li className={classes.listItem}>
-                                <MaterialLink href="/premium-themes/onepirate/privacy/">Privacy</MaterialLink>
-                            </li>
-                        </ul>
-                    </Grid>
-                    <Grid item xs={6} sm={8} md={4}>
-                        <Typography variant="h6" marked="left" gutterBottom>
-                            Language
-                        </Typography>
-                        <TextField
-                            select
-                            SelectProps={{
-                                native: true,
-                            }}
-                            className={classes.language}
-                        >
-                            {LANGUAGES.map((language) => (
-                                <option value={language.code} key={language.code}>
-                                    {language.name}
-                                </option>
-                            ))}
-                        </TextField>
-                    </Grid>
-                    <Grid item>
-                        <Typography variant="caption">
-                            {'Icons made by '}
-                            <MaterialLink href="https://www.freepik.com" rel="sponsored" title="Freepik">
-                                Freepik
-                            </MaterialLink>
-                            {' from '}
-                            <MaterialLink href="https://www.flaticon.com" rel="sponsored" title="Flaticon">
-                                www.flaticon.com
-                            </MaterialLink>
-                            {' is licensed by '}
-                            <MaterialLink
-                                href="https://creativecommons.org/licenses/by/3.0/"
-                                title="Creative Commons BY 3.0"
-                                target="_blank"
-                                rel="noopener noreferrer"
-                            >
-                                CC 3.0 BY
-                            </MaterialLink>
-                        </Typography>
-                    </Grid>
-                </Grid>
-            </Container>
-        </Typography>
-    );
-}
+export default Home;

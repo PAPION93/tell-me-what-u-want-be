@@ -1,30 +1,52 @@
-import withRoot from "../modules/withRoot";
-// --- Post bootstrap -----
 import React from "react";
-import ProductCategories from "../modules/views/ProductCategories";
-import ProductSmokingHero from "../modules/views/ProductSmokingHero";
-import Footer from "./Footer";
-import AppFooter from "../modules/views/AppFooter";
-import ProductHero from "../modules/views/ProductHero";
-import ProductValues from "../modules/views/ProductValues";
-import ProductHowItWorks from "../modules/views/ProductHowItWorks";
-import ProductCTA from "../modules/views/ProductCTA";
-import AppAppBar from "../modules/views/AppAppBar";
-import Header from "./Header";
+import "./Home.css";
 
-function Index() {
-    return (
-        <React.Fragment>
-            <Header />
-            <ProductHero />
-            {/*<ProductValues />*/}
-            {/*<ProductCategories />*/}
-            {/*<ProductHowItWorks />*/}
-            {/*<ProductCTA />*/}
-            {/*<ProductSmokingHero />*/}
-            <Footer />
-        </React.Fragment>
-    );
+class Home extends React.Component {
+    render() {
+        return (
+            <div id="i775">
+                <div id="i1v2" className="container-width">
+                    <div className="logo-container"></div>
+                    <nav className="menu"></nav>
+                    <div className="clearfix"></div>
+                    <div id="i7bcv" className="lead-title">
+                        <b>Tell me what you want</b>
+                    </div>
+                    <form id="i09tj" className="form">
+                        <div id="in42r" className="form-group">
+                            <div className="form-group"></div>
+                        </div>
+                        <div id="ima0z" className="form-group">
+                            <div className="form-group"></div>
+                        </div>
+                        <div className="form-group"></div>
+                        <div id="icr3c" className="row">
+                            <div id="i2pk4" className="cell">
+                                <input
+                                    placeholder="Type here your name"
+                                    id="iznni"
+                                    className="input"
+                                />
+                            </div>
+                            <div id="ipwp3" className="cell">
+                                <input
+                                    placeholder="Type here your name"
+                                    id="ih5un"
+                                    className="input"
+                                />
+                            </div>
+                            <div id="ing8s" className="cell">
+                                <button id="ibp5m" className="button">
+                                    Send
+                                </button>
+                            </div>
+                        </div>
+                        <div id="irfaq" className="form-group"></div>
+                    </form>
+                </div>
+            </div>
+        );
+    }
 }
 
-export default withRoot(Index);
+export default Home;
