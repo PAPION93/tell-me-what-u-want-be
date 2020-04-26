@@ -54,17 +54,6 @@ class Home extends React.Component {
                         </div>
                     </div>
                 </div>
-                <div className="copyright">
-                    <div id="i6sgea" className="container-width">
-                        <div id="i5joor" className="made-with">
-                            made with GrapesJS
-                        </div>
-                        <div className="foot-social-btns">
-                            facebook twitter linkedin mail
-                        </div>
-                        <div className="clearfix"></div>
-                    </div>
-                </div>
             </footer>
         );
     }
