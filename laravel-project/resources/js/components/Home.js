@@ -23,6 +23,7 @@ class Home extends React.Component {
                         <div id="icr3c" className="row">
                             <div id="i2pk4" className="cell">
                                 <input
+                                    type="text"
                                     placeholder="Type here your name"
                                     id="iznni"
                                     className="input"
@@ -30,6 +31,7 @@ class Home extends React.Component {
                             </div>
                             <div id="ipwp3" className="cell">
                                 <input
+                                    type="text"
                                     placeholder="Type here your name"
                                     id="ih5un"
                                     className="input"
