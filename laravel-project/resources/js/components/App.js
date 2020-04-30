@@ -4,6 +4,7 @@ import Home from "./Home";
 import Search from "./Search";
 import Header from "./Header";
 import Footer from "./Footer";
+import "./Footer.css";
 
 function App() {
     return (

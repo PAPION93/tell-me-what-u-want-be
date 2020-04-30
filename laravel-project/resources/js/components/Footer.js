@@ -1,57 +1,70 @@
 import React from "react";
-import "./Home.css";
+import "./Footer.css";
 
 class Home extends React.Component {
     render() {
         return (
-            <footer id="i5hkyi" className="footer-under">
-                <div className="container-width">
-                    <div id="i7d7pb" className="footer-container">
-                        <div className="foot-lists">
-                            <div className="foot-list">
-                                <div className="foot-list-title">About us</div>
-                                <div className="foot-list-item">Contact</div>
-                                <div className="foot-list-item">Events</div>
-                                <div className="foot-list-item">Company</div>
-                                <div className="foot-list-item">Jobs</div>
-                                <div className="foot-list-item">Blog</div>
-                            </div>
-                            <div className="foot-list">
-                                <div className="foot-list-title">Services</div>
-                                <div className="foot-list-item">Education</div>
-                                <div className="foot-list-item">Partner</div>
-                                <div className="foot-list-item">Community</div>
-                                <div className="foot-list-item">Forum</div>
-                                <div className="foot-list-item">Download</div>
-                                <div className="foot-list-item">Upgrade</div>
-                            </div>
-                            <div className="clearfix"></div>
-                        </div>
-                        <div className="form-sub">
-                            <div className="foot-form-cont">
-                                <div id="iqo71n" className="foot-form-title">
-                                    Subscribe
+            <footer class="footer-under" id="i4jtud">
+                <div class="container-width">
+                    <div class="footer-container">
+                        <div class="foot-lists">
+                            <div class="foot-list">
+                                <div class="foot-list-title">About us</div>
+                                <div id="iwobrz" class="foot-list-item">
+                                    Contact
                                 </div>
-                                <div className="foot-form-desc">
+                                <div id="ii8knd" class="foot-list-item">
+                                    Events
+                                </div>
+                                <div id="i036im" class="foot-list-item">
+                                    Company
+                                </div>
+                                <div class="foot-list-item">Jobs</div>
+                                <div class="foot-list-item">Blog</div>
+                            </div>
+                            <div class="foot-list">
+                                <div class="foot-list-title">Services</div>
+                                <div class="foot-list-item">Education</div>
+                                <div class="foot-list-item">Partner</div>
+                                <div class="foot-list-item">Community</div>
+                                <div class="foot-list-item">Forum</div>
+                                <div class="foot-list-item">Download</div>
+                                <div class="foot-list-item">Upgrade</div>
+                            </div>
+                            <div class="clearfix"></div>
+                        </div>
+                        <div class="form-sub">
+                            <div class="foot-form-cont">
+                                <div class="foot-form-title">Subscribe</div>
+                                <div class="foot-form-desc">
                                     Subscribe to our newsletter to receive
                                     exclusive offers and the latest news
                                 </div>
                                 <input
                                     name="name"
                                     placeholder="Name"
-                                    id="i90sbg"
-                                    className="sub-input"
+                                    id="ix1xbj"
+                                    class="sub-input"
                                 />
                                 <input
                                     name="email"
                                     placeholder="Email"
-                                    className="sub-input"
+                                    class="sub-input"
                                 />
-                                <button type="button" className="sub-btn">
+                                <button type="button" class="sub-btn">
                                     Submit
                                 </button>
                             </div>
                         </div>
+                    </div>
+                </div>
+                <div class="copyright">
+                    <div class="container-width">
+                        <div class="made-with">made with GrapesJS</div>
+                        <div class="foot-social-btns">
+                            facebook twitter linkedin mail
+                        </div>
+                        <div class="clearfix"></div>
                     </div>
                 </div>
             </footer>

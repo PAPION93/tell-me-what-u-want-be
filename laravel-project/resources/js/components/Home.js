@@ -37,7 +37,6 @@ class Home extends React.Component {
                                     id="ih5un"
                                     className="input"
                                 />
-                                <i class="locate-me">123</i>
                             </div>
                             <div id="ing8s" className="cell">
                                 <Link to="/search">
