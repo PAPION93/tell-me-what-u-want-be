@@ -1,5 +1,6 @@
 import React from "react";
 import "./Home.css";
+import { Link } from "react-router-dom";
 
 class Home extends React.Component {
     render() {
@@ -24,7 +25,7 @@ class Home extends React.Component {
                             <div id="i2pk4" className="cell">
                                 <input
                                     type="text"
-                                    placeholder="Type here your name"
+                                    placeholder="Whar are you looking for?"
                                     id="iznni"
                                     className="input"
                                 />
@@ -32,15 +33,18 @@ class Home extends React.Component {
                             <div id="ipwp3" className="cell">
                                 <input
                                     type="text"
-                                    placeholder="Type here your name"
+                                    placeholder="Location"
                                     id="ih5un"
                                     className="input"
                                 />
+                                <i class="locate-me">123</i>
                             </div>
                             <div id="ing8s" className="cell">
-                                <button id="ibp5m" className="button">
-                                    Send
-                                </button>
+                                <Link to="/search">
+                                    <button id="ibp5m" className="button">
+                                        Search
+                                    </button>
+                                </Link>
                             </div>
                         </div>
                         <div id="irfaq" className="form-group"></div>

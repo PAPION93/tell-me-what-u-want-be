@@ -111,10 +111,21 @@ body {
     margin-bottom: 15px;
 }
 .form {
-    border-radius: 3px;
+    /* border-radius: 3px;
     padding: 10px 15px;
-    background-color: rgba(0, 0, 0, 0.2);
+    background-color: rgba(0, 0, 0, 0.2); */
 }
+.locate-me {
+    top: 0;
+    right: 0;
+    z-index: 10;
+    position: absolute;
+    cursor: pointer;
+    width: 40px;
+    height: 44px;
+    text-align: center;
+}
+
 .input {
     width: 100%;
     margin-bottom: 15px;
@@ -229,7 +240,7 @@ body {
     padding: 5px;
     min-height: 50px;
     min-width: 50px;
-    color: inherit;
+    color: #ffffff;
     text-decoration: none;
 }
 .navbar-menu {
@@ -240,7 +251,7 @@ body {
 }
 .navbar-menu-link {
     margin: 0;
-    color: inherit;
+    color: #fff;
     text-decoration: none;
     display: inline-block;
     padding: 10px 15px;
@@ -284,8 +295,9 @@ body {
     background-position: left top;
     background-attachment: scroll;
     background-size: auto;
-    border: none rgb(255, 255, 255);
+    border: solid 1px rgb(255, 255, 255);
     border-radius: 10px 10px 10px 10px;
+    border-color: rgb(173, 173, 173);
 }
 #in42r {
     width: 80%;
