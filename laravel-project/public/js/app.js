@@ -6534,7 +6534,7 @@ exports = module.exports = __webpack_require__(/*! ../../../node_modules/css-loa
 
 
 // module
-exports.push([module.i, "* {\r\n    box-sizing: border-box;\r\n}\r\nbody {\r\n    margin: 0;\r\n    padding: 0;\r\n    background-color: #eff3f7;\r\n    height: 100%;\r\n}\r\n.root {\r\n    margin: 0;\r\n    padding: 0;\r\n    width: 100%;\r\n}\r\n\r\n.clearfix {\r\n    clear: both;\r\n}\r\n.container-width {\r\n    width: 90%;\r\n    max-width: 1150px;\r\n    margin: 0 auto;\r\n}\r\n.footer-under {\r\n    background-color: #312833;\r\n    padding-bottom: 100px;\r\n    padding-top: 100px;\r\n    min-height: 500px;\r\n    color: #eee;\r\n    position: relative;\r\n    font-weight: 100;\r\n    font-family: Helvetica, serif;\r\n}\r\n.copyright {\r\n    background-color: rgba(0, 0, 0, 0.15);\r\n    color: rgba(238, 238, 238, 0.5);\r\n    bottom: 0;\r\n    padding: 1em 0;\r\n    position: absolute;\r\n    width: 100%;\r\n    font-size: 0.75em;\r\n}\r\n.made-with {\r\n    float: left;\r\n    width: 50%;\r\n    padding: 5px 0;\r\n}\r\n.foot-social-btns {\r\n    display: none;\r\n    float: right;\r\n    width: 50%;\r\n    text-align: right;\r\n    padding: 5px 0;\r\n}\r\n.footer-container {\r\n    display: flex;\r\n    flex-wrap: wrap;\r\n    align-items: stretch;\r\n    justify-content: space-around;\r\n}\r\n.foot-list {\r\n    float: left;\r\n    width: 200px;\r\n}\r\n.foot-list-title {\r\n    font-weight: 400;\r\n    margin-bottom: 10px;\r\n    padding: 0.5em 0;\r\n}\r\n.foot-list-item {\r\n    color: rgba(238, 238, 238, 0.8);\r\n    font-size: 0.8em;\r\n    padding: 0.5em 0;\r\n}\r\n.foot-list-item:hover {\r\n    color: rgba(238, 238, 238, 1);\r\n}\r\n.foot-form-cont {\r\n    width: 300px;\r\n    float: right;\r\n}\r\n.foot-form-title {\r\n    color: rgba(255, 255, 255, 0.75);\r\n    font-weight: 400;\r\n    margin-bottom: 10px;\r\n    padding: 0.5em 0;\r\n    text-align: right;\r\n    font-size: 2em;\r\n}\r\n.foot-form-desc {\r\n    font-size: 0.8em;\r\n    color: rgba(255, 255, 255, 0.55);\r\n    line-height: 20px;\r\n    text-align: right;\r\n    margin-bottom: 15px;\r\n}\r\n.sub-input {\r\n    width: 100%;\r\n    margin-bottom: 15px;\r\n    padding: 7px 10px;\r\n    border-radius: 2px;\r\n    color: #fff;\r\n    background-color: #554c57;\r\n    border: none;\r\n}\r\n.sub-btn {\r\n    width: 100%;\r\n    margin: 15px 0;\r\n    background-color: #785580;\r\n    border: none;\r\n    color: #fff;\r\n    border-radius: 2px;\r\n    padding: 7px 10px;\r\n    font-size: 1em;\r\n    cursor: pointer;\r\n}\r\n.sub-btn:hover {\r\n    background-color: #91699a;\r\n}\r\n.sub-btn:active {\r\n    background-color: #573f5c;\r\n}\r\n@media (max-width: 768px) {\r\n    .foot-form-cont {\r\n        width: 400px;\r\n    }\r\n    .foot-form-title {\r\n        width: autopx;\r\n    }\r\n}\r\n@media (max-width: 480px) {\r\n    .foot-lists {\r\n        display: none;\r\n    }\r\n}\r\n", ""]);
+exports.push([module.i, "* {\n    box-sizing: border-box;\n}\nbody {\n    margin: 0;\n    padding: 0;\n    background-color: #eff3f7;\n    height: 100%;\n}\n.root {\n    margin: 0;\n    padding: 0;\n    width: 100%;\n}\n\n.clearfix {\n    clear: both;\n}\n.container-width {\n    width: 90%;\n    max-width: 1150px;\n    margin: 0 auto;\n}\n.footer-under {\n    background-color: #312833;\n    padding-bottom: 100px;\n    padding-top: 100px;\n    min-height: 500px;\n    color: #eee;\n    position: relative;\n    font-weight: 100;\n    font-family: Helvetica, serif;\n}\n.copyright {\n    background-color: rgba(0, 0, 0, 0.15);\n    color: rgba(238, 238, 238, 0.5);\n    bottom: 0;\n    padding: 1em 0;\n    position: absolute;\n    width: 100%;\n    font-size: 0.75em;\n}\n.made-with {\n    float: left;\n    width: 50%;\n    padding: 5px 0;\n}\n.foot-social-btns {\n    display: none;\n    float: right;\n    width: 50%;\n    text-align: right;\n    padding: 5px 0;\n}\n.footer-container {\n    display: flex;\n    flex-wrap: wrap;\n    align-items: stretch;\n    justify-content: space-around;\n}\n.foot-list {\n    float: left;\n    width: 200px;\n}\n.foot-list-title {\n    font-weight: 400;\n    margin-bottom: 10px;\n    padding: 0.5em 0;\n}\n.foot-list-item {\n    color: rgba(238, 238, 238, 0.8);\n    font-size: 0.8em;\n    padding: 0.5em 0;\n}\n.foot-list-item:hover {\n    color: rgba(238, 238, 238, 1);\n}\n.foot-form-cont {\n    width: 300px;\n    float: right;\n}\n.foot-form-title {\n    color: rgba(255, 255, 255, 0.75);\n    font-weight: 400;\n    margin-bottom: 10px;\n    padding: 0.5em 0;\n    text-align: right;\n    font-size: 2em;\n}\n.foot-form-desc {\n    font-size: 0.8em;\n    color: rgba(255, 255, 255, 0.55);\n    line-height: 20px;\n    text-align: right;\n    margin-bottom: 15px;\n}\n.sub-input {\n    width: 100%;\n    margin-bottom: 15px;\n    padding: 7px 10px;\n    border-radius: 2px;\n    color: #fff;\n    background-color: #554c57;\n    border: none;\n}\n.sub-btn {\n    width: 100%;\n    margin: 15px 0;\n    background-color: #785580;\n    border: none;\n    color: #fff;\n    border-radius: 2px;\n    padding: 7px 10px;\n    font-size: 1em;\n    cursor: pointer;\n}\n.sub-btn:hover {\n    background-color: #91699a;\n}\n.sub-btn:active {\n    background-color: #573f5c;\n}\n@media (max-width: 768px) {\n    .foot-form-cont {\n        width: 400px;\n    }\n    .foot-form-title {\n        width: autopx;\n    }\n}\n@media (max-width: 480px) {\n    .foot-lists {\n        display: none;\n    }\n}\n", ""]);
 
 // exports
 
@@ -6554,25 +6554,6 @@ exports = module.exports = __webpack_require__(/*! ../../../node_modules/css-loa
 
 // module
 exports.push([module.i, "* {\n    box-sizing: border-box;\n}\nbody {\n    margin: 0;\n    padding: 0;\n    background-color: #eff3f7;\n    height: 100%;\n}\n.root {\n    margin: 0;\n    padding: 0;\n    width: 100%;\n}\n\n.clearfix {\n    clear: both;\n}\n.header-banner {\n    padding-top: 35px;\n    padding-bottom: 100px;\n    color: #ffffff;\n    font-family: Helvetica, serif;\n    font-weight: 100;\n    background-image: url(\"//grapesjs.com/img/bg-gr-v.png\"),\n        url(\"//grapesjs.com/img/work-desk.jpg\");\n    background-attachment: scroll, scroll;\n    background-position: left top, center center;\n    background-repeat: repeat-y, no-repeat;\n    background-size: contain, cover;\n}\n.container-width {\n    width: 90%;\n    max-width: 1150px;\n    margin: 0 auto;\n    padding: 10px 0;\n}\n.logo-container {\n    float: left;\n    width: 50%;\n}\n.menu {\n    float: right;\n    width: 50%;\n}\n.lead-title {\n    margin: 150px 0 30px 0;\n    font-size: 40px;\n}\n.form {\n    /* border-radius: 3px;\n    padding: 10px 15px;\n    background-color: rgba(0, 0, 0, 0.2); */\n}\n.input {\n    width: 100%;\n    margin-bottom: 15px;\n    padding: 7px 10px;\n    border-radius: 2px;\n    /* color: #fff; */\n    background-color: #554c57;\n    border: none;\n}\n.sub-input {\n    width: 100%;\n    margin-bottom: 15px;\n    padding: 7px 10px;\n    border-radius: 2px;\n    color: #fff;\n    background-color: #554c57;\n    border: none;\n}\n.button {\n    width: 100%;\n    margin: 15px 0;\n    background-color: #785580;\n    border: none;\n    color: #fff;\n    border-radius: 2px;\n    padding: 7px 10px;\n    font-size: 1em;\n    cursor: pointer;\n}\n.sub-btn {\n    width: 100%;\n    margin: 15px 0;\n    background-color: #785580;\n    border: none;\n    color: #fff;\n    border-radius: 2px;\n    padding: 7px 10px;\n    font-size: 1em;\n    cursor: pointer;\n}\n.sub-btn:hover {\n    background-color: #91699a;\n}\n.sub-btn:active {\n    background-color: #573f5c;\n}\n#i775 {\n    background-image: url(https://listify-demos.astoundify.com/classic/wp-content/uploads/sites/2/2019/05/Stocksy_txpbfa0785eO7M200_Medium_832542-1.jpg);\n    background-repeat: no-repeat;\n    background-position: left top;\n    background-attachment: scroll;\n    background-size: cover;\n    height: 90%;\n    min-height: 800px;\n}\n#i7bcv {\n    line-height: normal;\n    text-align: left;\n    text-decoration: none;\n    font-family: Lucida Sans Unicode, Lucida Grande, sans-serif;\n    font-size: 60px;\n    font-weight: 100;\n    letter-spacing: 6px;\n    color: #ffffff;\n}\n.row {\n    display: flex;\n    justify-content: flex-start;\n    align-items: stretch;\n    flex-wrap: nowrap;\n    padding: 10px;\n}\n.cell {\n    min-height: 75px;\n    flex-grow: 1;\n    flex-basis: 100%;\n}\n#i1v2 {\n    justify-content: flex-start;\n    max-width: 1000px;\n}\n#i5hkyi {\n    background-image: linear-gradient(#234f94, #234f94);\n    background-repeat: repeat;\n    background-position: left top;\n    background-attachment: scroll;\n    background-size: auto;\n}\n.navbar-items-c {\n    display: inline-block;\n    float: right;\n}\n.navbar {\n    background-color: #222;\n    color: #ddd;\n    min-height: 50px;\n    width: 100%;\n}\n.navbar-container {\n    max-width: 950px;\n    margin: 0 auto;\n    width: 95%;\n}\n.navbar-container::after {\n    content: \"\";\n    clear: both;\n    display: block;\n}\n.navbar-brand {\n    vertical-align: top;\n    display: inline-block;\n    padding: 5px;\n    min-height: 50px;\n    min-width: 50px;\n    color: #ffffff;\n    text-decoration: none;\n}\n.navbar-menu {\n    padding: 10px 0;\n    display: block;\n    float: right;\n    margin: 0;\n}\n.navbar-menu-link {\n    margin: 0;\n    color: #fff;\n    text-decoration: none;\n    display: inline-block;\n    padding: 10px 15px;\n}\n.navbar-burger {\n    margin: 10px 0;\n    width: 45px;\n    padding: 5px 10px;\n    display: none;\n    float: right;\n    cursor: pointer;\n}\n.navbar-burger-line {\n    padding: 1px;\n    background-color: white;\n    margin: 5px 0;\n}\n#ia8jz {\n    font-family: Verdana, Geneva, sans-serif;\n    font-size: 30px;\n}\n#ijbah {\n    height: 5%;\n    text-align: left;\n    background-image: linear-gradient(#234f94, #234f94);\n    background-repeat: repeat;\n    background-position: left top;\n    background-attachment: scroll;\n    background-size: auto;\n}\n#irfaq {\n    text-align: left;\n}\n#iznni {\n    position: static;\n    margin: 0 0 0 0;\n    height: 50px;\n    width: 95%;\n    background-image: linear-gradient(#ffffff, #ffffff);\n    background-repeat: repeat;\n    background-position: left top;\n    background-attachment: scroll;\n    background-size: auto;\n    border: solid 1px rgb(255, 255, 255);\n    border-radius: 10px 10px 10px 10px;\n    border-color: rgb(173, 173, 173);\n}\n#in42r {\n    width: 80%;\n    float: left;\n    margin: 0 0 0 10px;\n}\n#ima0z {\n    width: 80%;\n    float: left;\n    margin: 0 0 0 10px;\n}\n#ih5un {\n    margin: 0 0 0 0;\n    width: 95%;\n    flex-direction: row-reverse;\n    height: 50px;\n    min-height: auto;\n    border: solid #ffffff;\n    background-image: linear-gradient(#ffffff, #ffffff);\n    background-repeat: repeat;\n    background-position: left top;\n    background-attachment: scroll;\n    background-size: auto;\n    border-radius: 10px 10px 10px 10px;\n}\n#ibp5m {\n    height: 50px;\n    width: 95%;\n    margin: 0 0 0 0;\n    background-image: linear-gradient(#234f94, #234f94);\n    background-repeat: repeat;\n    background-position: left top;\n    background-attachment: scroll;\n    background-size: auto;\n    border-radius: 10px 10px 10px 10px;\n}\n#ing8s {\n    flex-basis: 71.4%;\n}\n#ipwp3 {\n    flex-basis: 101.6%;\n}\n@media (max-width: 768px) {\n    .foot-form-cont {\n        width: 400px;\n    }\n    .foot-form-title {\n        width: autopx;\n    }\n    .row {\n        flex-wrap: wrap;\n    }\n    .navbar-burger {\n        display: block;\n    }\n    .navbar-items-c {\n        display: none;\n        width: 100%;\n    }\n    .navbar-menu {\n        width: 100%;\n    }\n    .navbar-menu-link {\n        display: block;\n    }\n}\n@media (max-width: 480px) {\n    .foot-lists {\n        display: none;\n    }\n    #iznni {\n        height: 40px;\n        width: 100%;\n        margin: 0 0 0 0;\n    }\n    #ih5un {\n        height: 40px;\n        width: 100%;\n        margin: 0 0 0 0;\n    }\n    #i7bcv {\n        font-size: 31px;\n        margin: 30% 0 30px 0;\n        float: none;\n        align-items: flex-start;\n        align-self: auto;\n        text-align: center;\n    }\n    #in42r {\n        position: static;\n    }\n    #ibp5m {\n        margin: 0 0 0 0;\n        width: 100%;\n    }\n}\n", ""]);
-
-// exports
-
-
-/***/ }),
-
-/***/ "./node_modules/css-loader/index.js?!./node_modules/postcss-loader/src/index.js?!./resources/js/components/Search.css":
-/*!****************************************************************************************************************************!*\
-  !*** ./node_modules/css-loader??ref--6-1!./node_modules/postcss-loader/src??ref--6-2!./resources/js/components/Search.css ***!
-  \****************************************************************************************************************************/
-/*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
-
-exports = module.exports = __webpack_require__(/*! ../../../node_modules/css-loader/lib/css-base.js */ "./node_modules/css-loader/lib/css-base.js")(false);
-// imports
-
-
-// module
-exports.push([module.i, "* {\r\n    box-sizing: border-box;\r\n}\r\nbody {\r\n    margin: 0;\r\n    padding: 0;\r\n    background-color: #eff3f7;\r\n    height: 100%;\r\n}\r\n.root {\r\n    margin: 0;\r\n    padding: 0;\r\n    width: 100%;\r\n}\r\n\r\n.container-width {\r\n    width: 90%;\r\n    max-width: 1150px;\r\n    margin: 0 auto;\r\n}\r\n.flex-sect {\r\n    background-color: #fafafa;\r\n    padding: 10px 0;\r\n    font-family: Helvetica, serif;\r\n}\r\n.cards {\r\n    padding: 20px 0;\r\n    display: flex;\r\n    justify-content: space-around;\r\n    flex-flow: wrap;\r\n}\r\n.card {\r\n    background-color: white;\r\n    height: 300px;\r\n    width: 300px;\r\n    margin-bottom: 30px;\r\n    box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.2);\r\n    border-radius: 2px;\r\n    transition: all 0.5s ease;\r\n    font-weight: 100;\r\n    overflow: hidden;\r\n}\r\n.card:hover {\r\n    margin-top: -5px;\r\n    box-shadow: 0 20px 30px 0 rgba(0, 0, 0, 0.2);\r\n}\r\n.card-header {\r\n    height: 155px;\r\n    background-image: url(\"//placehold.it/350x250/78c5d6/fff/image1.jpg\");\r\n    background-size: cover;\r\n    background-position: center center;\r\n}\r\n.card-header.ch2 {\r\n    background-image: url(\"//placehold.it/350x250/459ba8/fff/image2.jpg\");\r\n}\r\n.card-header.ch3 {\r\n    background-image: url(\"//placehold.it/350x250/79c267/fff/image3.jpg\");\r\n}\r\n.card-header.ch4 {\r\n    background-image: url(\"//placehold.it/350x250/c5d647/fff/image4.jpg\");\r\n}\r\n.card-header.ch5 {\r\n    background-image: url(\"//placehold.it/350x250/f28c33/fff/image5.jpg\");\r\n}\r\n.card-header.ch6 {\r\n    background-image: url(\"//placehold.it/350x250/e868a2/fff/image6.jpg\");\r\n}\r\n.card-body {\r\n    padding: 15px 15px 5px 15px;\r\n    color: #555;\r\n}\r\n.card-title {\r\n    font-size: 1.4em;\r\n    margin-bottom: 5px;\r\n}\r\n.card-sub-title {\r\n    color: #b3b3b3;\r\n    font-size: 1em;\r\n    margin-bottom: 15px;\r\n}\r\n.card-desc {\r\n    font-size: 0.85rem;\r\n    line-height: 17px;\r\n}\r\n.row {\r\n    display: flex;\r\n    justify-content: flex-start;\r\n    align-items: stretch;\r\n    flex-wrap: nowrap;\r\n    padding: 10px;\r\n}\r\n.cell {\r\n    min-height: 75px;\r\n    flex-grow: 1;\r\n    flex-basis: 100%;\r\n}\r\n#i12jf {\r\n    padding: 10px;\r\n}\r\n#ictur {\r\n    padding: 10px;\r\n}\r\n@media (max-width: 768px) {\r\n    .row {\r\n        flex-wrap: wrap;\r\n    }\r\n}\r\n", ""]);
 
 // exports
 
@@ -70605,6 +70586,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var react_router_dom__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react-router-dom */ "./node_modules/react-router-dom/esm/react-router-dom.js");
 /* harmony import */ var _Home__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./Home */ "./resources/js/components/Home.js");
 /* harmony import */ var _Search__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./Search */ "./resources/js/components/Search.js");
+/* harmony import */ var _Search__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(_Search__WEBPACK_IMPORTED_MODULE_3__);
 /* harmony import */ var _Header__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./Header */ "./resources/js/components/Header.js");
 /* harmony import */ var _Footer__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./Footer */ "./resources/js/components/Footer.js");
 /* harmony import */ var _Footer_css__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ./Footer.css */ "./resources/js/components/Footer.css");
@@ -70624,7 +70606,7 @@ function App() {
     component: _Home__WEBPACK_IMPORTED_MODULE_2__["default"]
   }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_1__["Route"], {
     path: "/search",
-    component: _Search__WEBPACK_IMPORTED_MODULE_3__["default"]
+    component: _Search__WEBPACK_IMPORTED_MODULE_3___default.a
   }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_Footer__WEBPACK_IMPORTED_MODULE_5__["default"], null));
 }
 
@@ -70998,7 +70980,7 @@ var Home = /*#__PURE__*/function (_React$Component) {
       }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
         id: "i7bcv",
         className: "lead-title"
-      }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("b", null, "Tell me what you want")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("form", {
+      }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("b", null, "Tell me what 1you want")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("form", {
         id: "i09tj",
         className: "form"
       }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
@@ -71054,214 +71036,14 @@ var Home = /*#__PURE__*/function (_React$Component) {
 
 /***/ }),
 
-/***/ "./resources/js/components/Search.css":
-/*!********************************************!*\
-  !*** ./resources/js/components/Search.css ***!
-  \********************************************/
-/*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
-
-
-var content = __webpack_require__(/*! !../../../node_modules/css-loader??ref--6-1!../../../node_modules/postcss-loader/src??ref--6-2!./Search.css */ "./node_modules/css-loader/index.js?!./node_modules/postcss-loader/src/index.js?!./resources/js/components/Search.css");
-
-if(typeof content === 'string') content = [[module.i, content, '']];
-
-var transform;
-var insertInto;
-
-
-
-var options = {"hmr":true}
-
-options.transform = transform
-options.insertInto = undefined;
-
-var update = __webpack_require__(/*! ../../../node_modules/style-loader/lib/addStyles.js */ "./node_modules/style-loader/lib/addStyles.js")(content, options);
-
-if(content.locals) module.exports = content.locals;
-
-if(false) {}
-
-/***/ }),
-
 /***/ "./resources/js/components/Search.js":
 /*!*******************************************!*\
   !*** ./resources/js/components/Search.js ***!
   \*******************************************/
-/*! exports provided: default */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
+/*! no static exports found */
+/***/ (function(module, exports) {
 
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var _Search_css__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./Search.css */ "./resources/js/components/Search.css");
-/* harmony import */ var _Search_css__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_Search_css__WEBPACK_IMPORTED_MODULE_1__);
-function _typeof(obj) { "@babel/helpers - typeof"; if (typeof Symbol === "function" && typeof Symbol.iterator === "symbol") { _typeof = function _typeof(obj) { return typeof obj; }; } else { _typeof = function _typeof(obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; }; } return _typeof(obj); }
-
-function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
-
-function _defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } }
-
-function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _defineProperties(Constructor.prototype, protoProps); if (staticProps) _defineProperties(Constructor, staticProps); return Constructor; }
-
-function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function"); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, writable: true, configurable: true } }); if (superClass) _setPrototypeOf(subClass, superClass); }
-
-function _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || function _setPrototypeOf(o, p) { o.__proto__ = p; return o; }; return _setPrototypeOf(o, p); }
-
-function _createSuper(Derived) { return function () { var Super = _getPrototypeOf(Derived), result; if (_isNativeReflectConstruct()) { var NewTarget = _getPrototypeOf(this).constructor; result = Reflect.construct(Super, arguments, NewTarget); } else { result = Super.apply(this, arguments); } return _possibleConstructorReturn(this, result); }; }
-
-function _possibleConstructorReturn(self, call) { if (call && (_typeof(call) === "object" || typeof call === "function")) { return call; } return _assertThisInitialized(self); }
-
-function _assertThisInitialized(self) { if (self === void 0) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return self; }
-
-function _isNativeReflectConstruct() { if (typeof Reflect === "undefined" || !Reflect.construct) return false; if (Reflect.construct.sham) return false; if (typeof Proxy === "function") return true; try { Date.prototype.toString.call(Reflect.construct(Date, [], function () {})); return true; } catch (e) { return false; } }
-
-function _getPrototypeOf(o) { _getPrototypeOf = Object.setPrototypeOf ? Object.getPrototypeOf : function _getPrototypeOf(o) { return o.__proto__ || Object.getPrototypeOf(o); }; return _getPrototypeOf(o); }
-
-
-
-
-var Home = /*#__PURE__*/function (_React$Component) {
-  _inherits(Home, _React$Component);
-
-  var _super = _createSuper(Home);
-
-  function Home() {
-    _classCallCheck(this, Home);
-
-    return _super.apply(this, arguments);
-  }
-
-  _createClass(Home, [{
-    key: "render",
-    value: function render() {
-      return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("section", {
-        id: "iidno",
-        "class": "flex-sect"
-      }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-        "class": "row",
-        id: "inek"
-      }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-        "class": "cell",
-        id: "ixjk"
-      }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-        id: "ibwvz",
-        "class": "container-width"
-      }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-        "class": "row"
-      }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-        "class": "cell",
-        id: "ibeyp"
-      }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("input", {
-        type: "text",
-        placeholder: "Whar are you looking for?",
-        id: "iznni",
-        className: "input"
-      })), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-        "class": "cell",
-        id: "ijpel"
-      }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("input", {
-        type: "text",
-        placeholder: "Whar are you looking for?",
-        id: "iznni",
-        className: "input"
-      }))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-        "class": "cards",
-        id: "iuod"
-      }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-        "class": "card"
-      }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-        "class": "card-header",
-        id: "i1gpb"
-      }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-        "class": "card-body"
-      }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-        "class": "card-title",
-        id: "ib1q9"
-      }, "Title one"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-        "class": "card-sub-title",
-        id: "ikehj"
-      }, "Subtitle one"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-        "class": "card-desc"
-      }, "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore"))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-        "class": "card"
-      }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-        "class": "card-header ch2",
-        id: "i9r9d"
-      }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-        "class": "card-body"
-      }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-        "class": "card-title"
-      }, "Title two"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-        "class": "card-sub-title"
-      }, "Subtitle two"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-        "class": "card-desc"
-      }, "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore"))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-        "class": "card"
-      }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-        "class": "card-header ch3"
-      }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-        "class": "card-body"
-      }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-        "class": "card-title"
-      }, "Title three"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-        "class": "card-sub-title"
-      }, "Subtitle three"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-        "class": "card-desc"
-      }, "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore"))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-        "class": "card"
-      }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-        "class": "card-header ch4"
-      }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-        "class": "card-body"
-      }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-        "class": "card-title"
-      }, "Title four"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-        "class": "card-sub-title"
-      }, "Subtitle four"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-        "class": "card-desc"
-      }, "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore"))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-        "class": "card"
-      }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-        "class": "card-header ch5"
-      }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-        "class": "card-body"
-      }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-        "class": "card-title"
-      }, "Title five"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-        "class": "card-sub-title"
-      }, "Subtitle five"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-        "class": "card-desc"
-      }, "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore"))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-        id: "i3uoh",
-        "class": "card"
-      }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-        id: "isglh",
-        "class": "card-header ch6"
-      }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-        "class": "card-body"
-      }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-        "class": "card-title"
-      }, "Title six"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-        "class": "card-sub-title"
-      }, "Subtitle six"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-        "class": "card-desc"
-      }, "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore")))))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-        id: "iw0ce",
-        "class": "cell"
-      }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("iframe", {
-        frameborder: "0",
-        id: "iy7mz",
-        src: "https://maps.google.com/maps?&z=1&t=q&output=embed"
-      }))));
-    }
-  }]);
-
-  return Home;
-}(react__WEBPACK_IMPORTED_MODULE_0___default.a.Component);
-
-/* harmony default export */ __webpack_exports__["default"] = (Home);
+throw new Error("Module build failed (from ./node_modules/babel-loader/lib/index.js):\nSyntaxError: /Users/papion/github/tell-me-what-you-want/laravel-project/resources/js/components/Search.js: Support for the experimental syntax 'classProperties' isn't currently enabled (7:17):\n\n\u001b[0m \u001b[90m  5 | \u001b[39m\u001b[36mclass\u001b[39m \u001b[33mHome\u001b[39m \u001b[36mextends\u001b[39m \u001b[33mReact\u001b[39m\u001b[33m.\u001b[39m\u001b[33mComponent\u001b[39m {\u001b[0m\n\u001b[0m \u001b[90m  6 | \u001b[39m\u001b[0m\n\u001b[0m\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m  7 | \u001b[39m    searchDatas \u001b[33m=\u001b[39m async () \u001b[33m=>\u001b[39m {\u001b[0m\n\u001b[0m \u001b[90m    | \u001b[39m                \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\u001b[0m\n\u001b[0m \u001b[90m  8 | \u001b[39m        \u001b[36mconst\u001b[39m {\u001b[0m\n\u001b[0m \u001b[90m  9 | \u001b[39m            data\u001b[33m:\u001b[39m {\u001b[0m\n\u001b[0m \u001b[90m 10 | \u001b[39m                data\u001b[33m:\u001b[39m { }\u001b[0m\n\nAdd @babel/plugin-proposal-class-properties (https://git.io/vb4SL) to the 'plugins' section of your Babel config to enable transformation.\n    at Object._raise (/Users/papion/github/tell-me-what-you-want/laravel-project/node_modules/@babel/parser/lib/index.js:742:17)\n    at Object.raiseWithData (/Users/papion/github/tell-me-what-you-want/laravel-project/node_modules/@babel/parser/lib/index.js:735:17)\n    at Object.expectPlugin (/Users/papion/github/tell-me-what-you-want/laravel-project/node_modules/@babel/parser/lib/index.js:8762:18)\n    at Object.parseClassProperty (/Users/papion/github/tell-me-what-you-want/laravel-project/node_modules/@babel/parser/lib/index.js:12110:12)\n    at Object.pushClassProperty (/Users/papion/github/tell-me-what-you-want/laravel-project/node_modules/@babel/parser/lib/index.js:12070:30)\n    at Object.parseClassMemberWithIsStatic (/Users/papion/github/tell-me-what-you-want/laravel-project/node_modules/@babel/parser/lib/index.js:12003:14)\n    at Object.parseClassMember (/Users/papion/github/tell-me-what-you-want/laravel-project/node_modules/@babel/parser/lib/index.js:11940:10)\n    at /Users/papion/github/tell-me-what-you-want/laravel-project/node_modules/@babel/parser/lib/index.js:11885:14\n    at Object.withTopicForbiddingContext (/Users/papion/github/tell-me-what-you-want/laravel-project/node_modules/@babel/parser/lib/index.js:10956:14)\n    at Object.parseClassBody (/Users/papion/github/tell-me-what-you-want/laravel-project/node_modules/@babel/parser/lib/index.js:11862:10)\n    at Object.parseClass (/Users/papion/github/tell-me-what-you-want/laravel-project/node_modules/@babel/parser/lib/index.js:11836:22)\n    at Object.parseStatementContent (/Users/papion/github/tell-me-what-you-want/laravel-project/node_modules/@babel/parser/lib/index.js:11123:21)\n    at Object.parseStatement (/Users/papion/github/tell-me-what-you-want/laravel-project/node_modules/@babel/parser/lib/index.js:11081:17)\n    at Object.parseBlockOrModuleBlockBody (/Users/papion/github/tell-me-what-you-want/laravel-project/node_modules/@babel/parser/lib/index.js:11656:25)\n    at Object.parseBlockBody (/Users/papion/github/tell-me-what-you-want/laravel-project/node_modules/@babel/parser/lib/index.js:11642:10)\n    at Object.parseTopLevel (/Users/papion/github/tell-me-what-you-want/laravel-project/node_modules/@babel/parser/lib/index.js:11012:10)\n    at Object.parse (/Users/papion/github/tell-me-what-you-want/laravel-project/node_modules/@babel/parser/lib/index.js:12637:10)\n    at parse (/Users/papion/github/tell-me-what-you-want/laravel-project/node_modules/@babel/parser/lib/index.js:12688:38)\n    at parser (/Users/papion/github/tell-me-what-you-want/laravel-project/node_modules/@babel/core/lib/parser/index.js:54:34)\n    at parser.next (<anonymous>)\n    at normalizeFile (/Users/papion/github/tell-me-what-you-want/laravel-project/node_modules/@babel/core/lib/transformation/normalize-file.js:93:38)\n    at normalizeFile.next (<anonymous>)\n    at run (/Users/papion/github/tell-me-what-you-want/laravel-project/node_modules/@babel/core/lib/transformation/index.js:31:50)\n    at run.next (<anonymous>)\n    at Function.transform (/Users/papion/github/tell-me-what-you-want/laravel-project/node_modules/@babel/core/lib/transform.js:27:41)\n    at transform.next (<anonymous>)\n    at step (/Users/papion/github/tell-me-what-you-want/laravel-project/node_modules/gensync/index.js:254:32)\n    at /Users/papion/github/tell-me-what-you-want/laravel-project/node_modules/gensync/index.js:266:13\n    at async.call.result.err.err (/Users/papion/github/tell-me-what-you-want/laravel-project/node_modules/gensync/index.js:216:11)\n    at /Users/papion/github/tell-me-what-you-want/laravel-project/node_modules/gensync/index.js:184:28\n    at /Users/papion/github/tell-me-what-you-want/laravel-project/node_modules/@babel/core/lib/gensync-utils/async.js:72:7\n    at /Users/papion/github/tell-me-what-you-want/laravel-project/node_modules/gensync/index.js:108:33\n    at step (/Users/papion/github/tell-me-what-you-want/laravel-project/node_modules/gensync/index.js:280:14)\n    at /Users/papion/github/tell-me-what-you-want/laravel-project/node_modules/gensync/index.js:266:13\n    at async.call.result.err.err (/Users/papion/github/tell-me-what-you-want/laravel-project/node_modules/gensync/index.js:216:11)");
 
 /***/ }),
 
@@ -71283,8 +71065,8 @@ var Home = /*#__PURE__*/function (_React$Component) {
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-__webpack_require__(/*! D:\Github\Repository\tell-me-what-you-want\laravel-project\resources\js\app.js */"./resources/js/app.js");
-module.exports = __webpack_require__(/*! D:\Github\Repository\tell-me-what-you-want\laravel-project\resources\sass\app.scss */"./resources/sass/app.scss");
+__webpack_require__(/*! /Users/papion/github/tell-me-what-you-want/laravel-project/resources/js/app.js */"./resources/js/app.js");
+module.exports = __webpack_require__(/*! /Users/papion/github/tell-me-what-you-want/laravel-project/resources/sass/app.scss */"./resources/sass/app.scss");
 
 
 /***/ })
