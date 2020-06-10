@@ -10,11 +10,13 @@
     "require": {
         "php": "^7.2.5",
         "fideloper/proxy": "^4.2",
+        "laravel/framework": "^7.0",
         "fruitcake/laravel-cors": "^1.0",
         "guzzlehttp/guzzle": "^6.3",
-        "laravel/framework": "^7.0",
-        "laravel/tinker": "^2.0",
-        "laravel/ui": "^2.0"
+        "laravel/tinker": "^2.3.0",
+        "spatie/laravel-medialibrary": "^7.19.0",
+        "spatie/laravel-permission": "^3.8",
+        "laravel/ui": "^2.0.1"
     },
     "require-dev": {
         "facade/ignition": "^2.0",
@@ -38,8 +40,13 @@
             "App\\": "app/"
         },
         "classmap": [
+            "database",
             "database/seeds",
             "database/factories"
+        ],
+        "files": [
+            "database/seeds/UsersAndNotesSeeder.php",
+            "database/seeds/MenusTableSeeder.php"
         ]
     },
     "autoload-dev": {

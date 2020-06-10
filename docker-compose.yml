@@ -4,9 +4,8 @@ services:
     laravel:
         # docker-compose scale 설정시 continer_name 주석
         container_name: tell-me-app
-        # build: .
-        # image: custom-laravel
-        image: papion93/docker-laravel:0.2
+        build: .
+        image: custom-laravel
         restart: always
         volumes:
             - ./laravel-project:/var/www/html
