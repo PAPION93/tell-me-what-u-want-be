@@ -1,10 +1,7 @@
 {
     "private": true,
     "scripts": {
-        "start": "react-scripts start",
-        "build": "react-scripts build",
-        "test": "react-scripts test",
-        "eject": "react-scripts eject",
+        "start": "ng serve",
         "dev": "npm run development",
         "development": "cross-env NODE_ENV=development node_modules/webpack/bin/webpack.js --progress --hide-modules --config=node_modules/laravel-mix/setup/webpack.config.js",
         "watch": "npm run development -- --watch",
@@ -20,7 +17,7 @@
         "cross-env": "^7.0",
         "jquery": "^3.5.1",
         "laravel-mix": "^5.0.1",
-        "lodash": "^4.17.13",
+        "lodash": "^4.17.19",
         "popper.js": "^1.12",
         "react": "^16.2.0",
         "react-dom": "^16.2.0",
@@ -33,7 +30,7 @@
         "@material-ui/icons": "^4.9.1",
         "clsx": "latest",
         "prop-types": "latest",
-        "react-final-form": "^6.4.0",
+        "react-final-form": "^6.5.0",
         "react-router-dom": "^5.2.0",
         "validator": "^13.0.0"
     }

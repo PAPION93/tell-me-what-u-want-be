@@ -87,7 +87,7 @@ body {
     justify-content: flex-start;
     align-items: stretch;
     flex-wrap: nowrap;
-    padding: 10px;
+    padding: 5px;
 }
 .cell {
     min-height: 75px;

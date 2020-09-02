@@ -1,7 +1,20 @@
 import React from "react";
+import axios from "axios";
 import "./Search.css";
 
 class Home extends React.Component {
+
+    searchDatas = async () => {
+        const {
+            data: {
+                data: { }
+            }
+        } = await axios.get(
+            "https://yts.mx/api/v2/list_movices.json"
+        )
+
+    }
+
     render() {
         return (
             <section id="iidno" class="flex-sect">
@@ -25,6 +38,10 @@ class Home extends React.Component {
                                         className="input"
                                     />
                                 </div>
+                                <div class="cell" id="ijpel">
+                                    <button onClick={this.searchDatas}>검색</button>
+                                    />
+                                </div>
                             </div>
                             <div class="cards" id="iuod">
                                 <div class="card">
@@ -43,7 +60,7 @@ class Home extends React.Component {
                                         </div>
                                     </div>
                                 </div>
-                                <div class="card">
+                                {/* <div class="card">
                                     <div
                                         class="card-header ch2"
                                         id="i9r9d"
@@ -120,7 +137,7 @@ class Home extends React.Component {
                                             eiusmod tempor incididunt ut labore
                                         </div>
                                     </div>
-                                </div>
+                                </div> */}
                             </div>
                         </div>
                     </div>
