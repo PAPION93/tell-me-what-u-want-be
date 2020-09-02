@@ -161,23 +161,6 @@ function _objectWithoutPropertiesLoose(source, excluded) {
 
 /***/ }),
 
-/***/ "./node_modules/@babel/runtime/helpers/inheritsLoose.js":
-/*!**************************************************************!*\
-  !*** ./node_modules/@babel/runtime/helpers/inheritsLoose.js ***!
-  \**************************************************************/
-/*! no static exports found */
-/***/ (function(module, exports) {
-
-function _inheritsLoose(subClass, superClass) {
-  subClass.prototype = Object.create(superClass.prototype);
-  subClass.prototype.constructor = subClass;
-  subClass.__proto__ = superClass;
-}
-
-module.exports = _inheritsLoose;
-
-/***/ }),
-
 /***/ "./node_modules/axios/index.js":
 /*!*************************************!*\
   !*** ./node_modules/axios/index.js ***!
@@ -6553,7 +6536,7 @@ exports = module.exports = __webpack_require__(/*! ../../../node_modules/css-loa
 
 
 // module
-exports.push([module.i, "* {\n    box-sizing: border-box;\n}\nbody {\n    margin: 0;\n    padding: 0;\n    background-color: #eff3f7;\n    height: 100%;\n}\n.root {\n    margin: 0;\n    padding: 0;\n    width: 100%;\n}\n\n.clearfix {\n    clear: both;\n}\n.header-banner {\n    padding-top: 35px;\n    padding-bottom: 100px;\n    color: #ffffff;\n    font-family: Helvetica, serif;\n    font-weight: 100;\n    background-image: url(\"//grapesjs.com/img/bg-gr-v.png\"),\n        url(\"//grapesjs.com/img/work-desk.jpg\");\n    background-attachment: scroll, scroll;\n    background-position: left top, center center;\n    background-repeat: repeat-y, no-repeat;\n    background-size: contain, cover;\n}\n.container-width {\n    width: 90%;\n    max-width: 1150px;\n    margin: 0 auto;\n    padding: 10px 0;\n}\n.logo-container {\n    float: left;\n    width: 50%;\n}\n.menu {\n    float: right;\n    width: 50%;\n}\n.lead-title {\n    margin: 150px 0 30px 0;\n    font-size: 40px;\n}\n.form {\n    /* border-radius: 3px;\n    padding: 10px 15px;\n    background-color: rgba(0, 0, 0, 0.2); */\n}\n.input {\n    width: 100%;\n    margin-bottom: 15px;\n    padding: 7px 10px;\n    border-radius: 2px;\n    /* color: #fff; */\n    background-color: #554c57;\n    border: none;\n}\n.sub-input {\n    width: 100%;\n    margin-bottom: 15px;\n    padding: 7px 10px;\n    border-radius: 2px;\n    color: #fff;\n    background-color: #554c57;\n    border: none;\n}\n.button {\n    width: 100%;\n    margin: 15px 0;\n    background-color: #785580;\n    border: none;\n    color: #fff;\n    border-radius: 2px;\n    padding: 7px 10px;\n    font-size: 1em;\n    cursor: pointer;\n}\n.sub-btn {\n    width: 100%;\n    margin: 15px 0;\n    background-color: #785580;\n    border: none;\n    color: #fff;\n    border-radius: 2px;\n    padding: 7px 10px;\n    font-size: 1em;\n    cursor: pointer;\n}\n.sub-btn:hover {\n    background-color: #91699a;\n}\n.sub-btn:active {\n    background-color: #573f5c;\n}\n#i775 {\n    background-image: url(https://listify-demos.astoundify.com/classic/wp-content/uploads/sites/2/2019/05/Stocksy_txpbfa0785eO7M200_Medium_832542-1.jpg);\n    background-repeat: no-repeat;\n    background-position: left top;\n    background-attachment: scroll;\n    background-size: cover;\n    height: 90%;\n    min-height: 800px;\n}\n#i7bcv {\n    line-height: normal;\n    text-align: left;\n    text-decoration: none;\n    font-family: Lucida Sans Unicode, Lucida Grande, sans-serif;\n    font-size: 60px;\n    font-weight: 100;\n    letter-spacing: 6px;\n    color: #ffffff;\n}\n.row {\n    display: flex;\n    justify-content: flex-start;\n    align-items: stretch;\n    flex-wrap: nowrap;\n    padding: 10px;\n}\n.cell {\n    min-height: 75px;\n    flex-grow: 1;\n    flex-basis: 100%;\n}\n#i1v2 {\n    justify-content: flex-start;\n    max-width: 1000px;\n}\n#i5hkyi {\n    background-image: linear-gradient(#234f94, #234f94);\n    background-repeat: repeat;\n    background-position: left top;\n    background-attachment: scroll;\n    background-size: auto;\n}\n.navbar-items-c {\n    display: inline-block;\n    float: right;\n}\n.navbar {\n    background-color: #222;\n    color: #ddd;\n    min-height: 50px;\n    width: 100%;\n}\n.navbar-container {\n    max-width: 950px;\n    margin: 0 auto;\n    width: 95%;\n}\n.navbar-container::after {\n    content: \"\";\n    clear: both;\n    display: block;\n}\n.navbar-brand {\n    vertical-align: top;\n    display: inline-block;\n    padding: 5px;\n    min-height: 50px;\n    min-width: 50px;\n    color: #ffffff;\n    text-decoration: none;\n}\n.navbar-menu {\n    padding: 10px 0;\n    display: block;\n    float: right;\n    margin: 0;\n}\n.navbar-menu-link {\n    margin: 0;\n    color: #fff;\n    text-decoration: none;\n    display: inline-block;\n    padding: 10px 15px;\n}\n.navbar-burger {\n    margin: 10px 0;\n    width: 45px;\n    padding: 5px 10px;\n    display: none;\n    float: right;\n    cursor: pointer;\n}\n.navbar-burger-line {\n    padding: 1px;\n    background-color: white;\n    margin: 5px 0;\n}\n#ia8jz {\n    font-family: Verdana, Geneva, sans-serif;\n    font-size: 30px;\n}\n#ijbah {\n    height: 5%;\n    text-align: left;\n    background-image: linear-gradient(#234f94, #234f94);\n    background-repeat: repeat;\n    background-position: left top;\n    background-attachment: scroll;\n    background-size: auto;\n}\n#irfaq {\n    text-align: left;\n}\n#iznni {\n    position: static;\n    margin: 0 0 0 0;\n    height: 50px;\n    width: 95%;\n    background-image: linear-gradient(#ffffff, #ffffff);\n    background-repeat: repeat;\n    background-position: left top;\n    background-attachment: scroll;\n    background-size: auto;\n    border: solid 1px rgb(255, 255, 255);\n    border-radius: 10px 10px 10px 10px;\n    border-color: rgb(173, 173, 173);\n}\n#in42r {\n    width: 80%;\n    float: left;\n    margin: 0 0 0 10px;\n}\n#ima0z {\n    width: 80%;\n    float: left;\n    margin: 0 0 0 10px;\n}\n#ih5un {\n    margin: 0 0 0 0;\n    width: 95%;\n    flex-direction: row-reverse;\n    height: 50px;\n    min-height: auto;\n    border: solid #ffffff;\n    background-image: linear-gradient(#ffffff, #ffffff);\n    background-repeat: repeat;\n    background-position: left top;\n    background-attachment: scroll;\n    background-size: auto;\n    border-radius: 10px 10px 10px 10px;\n}\n#ibp5m {\n    height: 50px;\n    width: 95%;\n    margin: 0 0 0 0;\n    background-image: linear-gradient(#234f94, #234f94);\n    background-repeat: repeat;\n    background-position: left top;\n    background-attachment: scroll;\n    background-size: auto;\n    border-radius: 10px 10px 10px 10px;\n}\n#ing8s {\n    flex-basis: 71.4%;\n}\n#ipwp3 {\n    flex-basis: 101.6%;\n}\n@media (max-width: 768px) {\n    .foot-form-cont {\n        width: 400px;\n    }\n    .foot-form-title {\n        width: autopx;\n    }\n    .row {\n        flex-wrap: wrap;\n    }\n    .navbar-burger {\n        display: block;\n    }\n    .navbar-items-c {\n        display: none;\n        width: 100%;\n    }\n    .navbar-menu {\n        width: 100%;\n    }\n    .navbar-menu-link {\n        display: block;\n    }\n}\n@media (max-width: 480px) {\n    .foot-lists {\n        display: none;\n    }\n    #iznni {\n        height: 40px;\n        width: 100%;\n        margin: 0 0 0 0;\n    }\n    #ih5un {\n        height: 40px;\n        width: 100%;\n        margin: 0 0 0 0;\n    }\n    #i7bcv {\n        font-size: 31px;\n        margin: 30% 0 30px 0;\n        float: none;\n        align-items: flex-start;\n        align-self: auto;\n        text-align: center;\n    }\n    #in42r {\n        position: static;\n    }\n    #ibp5m {\n        margin: 0 0 0 0;\n        width: 100%;\n    }\n}\n", ""]);
+exports.push([module.i, "* {\n    box-sizing: border-box;\n}\nbody {\n    margin: 0;\n    padding: 0;\n    background-color: #eff3f7;\n    height: 100%;\n}\n.root {\n    margin: 0;\n    padding: 0;\n    width: 100%;\n}\n\n.clearfix {\n    clear: both;\n}\n.header-banner {\n    padding-top: 35px;\n    padding-bottom: 100px;\n    color: #ffffff;\n    font-family: Helvetica, serif;\n    font-weight: 100;\n    background-image: url(\"//grapesjs.com/img/bg-gr-v.png\"),\n        url(\"//grapesjs.com/img/work-desk.jpg\");\n    background-attachment: scroll, scroll;\n    background-position: left top, center center;\n    background-repeat: repeat-y, no-repeat;\n    background-size: contain, cover;\n}\n.container-width {\n    width: 90%;\n    max-width: 1150px;\n    margin: 0 auto;\n    padding: 10px 0;\n}\n.logo-container {\n    float: left;\n    width: 50%;\n}\n.menu {\n    float: right;\n    width: 50%;\n}\n.lead-title {\n    margin: 150px 0 30px 0;\n    font-size: 40px;\n}\n.form {\n    border-radius: 3px;\n    padding: 10px 15px;\n    background-color: rgba(0, 0, 0, 0.2);\n}\n.input {\n    width: 100%;\n    margin-bottom: 15px;\n    padding: 7px 10px;\n    border-radius: 2px;\n    /* color: #fff; */\n    background-color: #554c57;\n    border: none;\n}\n.sub-input {\n    width: 100%;\n    margin-bottom: 15px;\n    padding: 7px 10px;\n    border-radius: 2px;\n    color: #fff;\n    background-color: #554c57;\n    border: none;\n}\n.button {\n    width: 100%;\n    margin: 15px 0;\n    background-color: #785580;\n    border: none;\n    color: #fff;\n    border-radius: 2px;\n    padding: 7px 10px;\n    font-size: 1em;\n    cursor: pointer;\n}\n.sub-btn {\n    width: 100%;\n    margin: 15px 0;\n    background-color: #785580;\n    border: none;\n    color: #fff;\n    border-radius: 2px;\n    padding: 7px 10px;\n    font-size: 1em;\n    cursor: pointer;\n}\n.sub-btn:hover {\n    background-color: #91699a;\n}\n.sub-btn:active {\n    background-color: #573f5c;\n}\n#i775 {\n    background-image: url(https://images.unsplash.com/photo-1463183547458-6a2c760d0912?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60);\n    background-repeat: no-repeat;\n    background-position: left top;\n    background-attachment: scroll;\n    background-size: cover;\n    /* height: 90%; */\n    /* min-height: 800px; */\n}\n#i7bcv {\n    line-height: normal;\n    text-align: left;\n    text-decoration: none;\n    font-family: Lucida Sans Unicode, Lucida Grande, sans-serif;\n    font-size: 60px;\n    font-weight: 100;\n    letter-spacing: 6px;\n    color: #ffffff;\n}\n.row {\n    display: flex;\n    justify-content: flex-start;\n    align-items: stretch;\n    flex-wrap: nowrap;\n    padding: 10px;\n}\n.cell {\n    min-height: 75px;\n    flex-grow: 1;\n    flex-basis: 100%;\n}\n#i1v2 {\n    justify-content: flex-start;\n    max-width: 1000px;\n}\n#i5hkyi {\n    background-image: linear-gradient(#234f94, #234f94);\n    background-repeat: repeat;\n    background-position: left top;\n    background-attachment: scroll;\n    background-size: auto;\n}\n.navbar-items-c {\n    display: inline-block;\n    float: right;\n}\n.navbar {\n    background-color: #222;\n    color: #ddd;\n    min-height: 50px;\n    width: 100%;\n}\n.navbar-container {\n    max-width: 950px;\n    margin: 0 auto;\n    width: 95%;\n}\n.navbar-container::after {\n    content: \"\";\n    clear: both;\n    display: block;\n}\n.navbar-brand {\n    vertical-align: top;\n    display: inline-block;\n    padding: 5px;\n    min-height: 50px;\n    min-width: 50px;\n    color: #ffffff;\n    text-decoration: none;\n}\n.navbar-menu {\n    padding: 10px 0;\n    display: block;\n    float: right;\n    margin: 0;\n}\n.navbar-menu-link {\n    margin: 0;\n    color: #fff;\n    text-decoration: none;\n    display: inline-block;\n    padding: 10px 15px;\n}\n.navbar-burger {\n    margin: 10px 0;\n    width: 45px;\n    padding: 5px 10px;\n    display: none;\n    float: right;\n    cursor: pointer;\n}\n.navbar-burger-line {\n    padding: 1px;\n    background-color: white;\n    margin: 5px 0;\n}\n#ia8jz {\n    font-family: Verdana, Geneva, sans-serif;\n    font-size: 30px;\n}\n#ijbah {\n    height: 5%;\n    text-align: left;\n    background-image: linear-gradient(#234f94, #234f94);\n    background-repeat: repeat;\n    background-position: left top;\n    background-attachment: scroll;\n    background-size: auto;\n}\n#irfaq {\n    text-align: left;\n}\n#iznni {\n    position: static;\n    margin: 0 0 0 0;\n    height: 50px;\n    width: 95%;\n    background-image: linear-gradient(#ffffff, #ffffff);\n    background-repeat: repeat;\n    background-position: left top;\n    background-attachment: scroll;\n    background-size: auto;\n    border: solid 1px rgb(255, 255, 255);\n    border-radius: 10px 10px 10px 10px;\n    border-color: rgb(173, 173, 173);\n}\n#in42r {\n    width: 80%;\n    float: left;\n    margin: 0 0 0 10px;\n}\n#ima0z {\n    width: 80%;\n    float: left;\n    margin: 0 0 0 10px;\n}\n#ih5un {\n    margin: 0 0 0 0;\n    width: 95%;\n    flex-direction: row-reverse;\n    height: 50px;\n    min-height: auto;\n    border: solid #ffffff;\n    background-image: linear-gradient(#ffffff, #ffffff);\n    background-repeat: repeat;\n    background-position: left top;\n    background-attachment: scroll;\n    background-size: auto;\n    border-radius: 10px 10px 10px 10px;\n}\n#ibp5m {\n    height: 50px;\n    width: 95%;\n    margin: 0 0 0 0;\n    background-image: linear-gradient(#234f94, #234f94);\n    background-repeat: repeat;\n    background-position: left top;\n    background-attachment: scroll;\n    background-size: auto;\n    border-radius: 10px 10px 10px 10px;\n}\n#ing8s {\n    flex-basis: 71.4%;\n}\n#ipwp3 {\n    flex-basis: 101.6%;\n}\n@media (max-width: 768px) {\n    .foot-form-cont {\n        width: 400px;\n    }\n    .foot-form-title {\n        width: autopx;\n    }\n    .row {\n        flex-wrap: wrap;\n    }\n    .navbar-burger {\n        display: block;\n    }\n    .navbar-items-c {\n        display: none;\n        width: 100%;\n    }\n    .navbar-menu {\n        width: 100%;\n    }\n    .navbar-menu-link {\n        display: block;\n    }\n}\n@media (max-width: 480px) {\n    .foot-lists {\n        display: none;\n    }\n    #iznni {\n        height: 40px;\n        width: 100%;\n        margin: 0 0 0 0;\n    }\n    #ih5un {\n        height: 40px;\n        width: 100%;\n        margin: 0 0 0 0;\n    }\n    #i7bcv {\n        font-size: 31px;\n        margin: 30% 0 30px 0;\n        float: none;\n        align-items: flex-start;\n        align-self: auto;\n        text-align: center;\n    }\n    #in42r {\n        position: static;\n    }\n    #ibp5m {\n        margin: 0 0 0 0;\n        width: 100%;\n    }\n}\n", ""]);
 
 // exports
 
@@ -6663,27 +6646,6 @@ function toComment(sourceMap) {
 	return '/*# ' + data + ' */';
 }
 
-
-/***/ }),
-
-/***/ "./node_modules/gud/index.js":
-/*!***********************************!*\
-  !*** ./node_modules/gud/index.js ***!
-  \***********************************/
-/*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-/* WEBPACK VAR INJECTION */(function(global) {// @flow
-
-
-var key = '__global_unique_id__';
-
-module.exports = function() {
-  return global[key] = (global[key] || 0) + 1;
-};
-
-/* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(/*! ./../webpack/buildin/global.js */ "./node_modules/webpack/buildin/global.js")))
 
 /***/ }),
 
@@ -35755,22 +35717,24 @@ return jQuery;
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
+/* WEBPACK VAR INJECTION */(function(global) {/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var _babel_runtime_helpers_inheritsLoose__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @babel/runtime/helpers/inheritsLoose */ "./node_modules/@babel/runtime/helpers/inheritsLoose.js");
-/* harmony import */ var _babel_runtime_helpers_inheritsLoose__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_babel_runtime_helpers_inheritsLoose__WEBPACK_IMPORTED_MODULE_1__);
+/* harmony import */ var _babel_runtime_helpers_esm_inheritsLoose__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @babel/runtime/helpers/esm/inheritsLoose */ "./node_modules/@babel/runtime/helpers/esm/inheritsLoose.js");
 /* harmony import */ var prop_types__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! prop-types */ "./node_modules/prop-types/index.js");
 /* harmony import */ var prop_types__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(prop_types__WEBPACK_IMPORTED_MODULE_2__);
-/* harmony import */ var gud__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! gud */ "./node_modules/gud/index.js");
-/* harmony import */ var gud__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(gud__WEBPACK_IMPORTED_MODULE_3__);
-/* harmony import */ var tiny_warning__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! tiny-warning */ "./node_modules/tiny-warning/dist/tiny-warning.esm.js");
-
+/* harmony import */ var tiny_warning__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! tiny-warning */ "./node_modules/tiny-warning/dist/tiny-warning.esm.js");
 
 
 
 
 
 var MAX_SIGNED_31_BIT_INT = 1073741823;
+var commonjsGlobal = typeof globalThis !== 'undefined' ? globalThis : typeof window !== 'undefined' ? window : typeof global !== 'undefined' ? global : {};
+
+function getUniqueId() {
+  var key = '__global_unique_id__';
+  return commonjsGlobal[key] = (commonjsGlobal[key] || 0) + 1;
+}
 
 function objectIs(x, y) {
   if (x === y) {
@@ -35810,12 +35774,10 @@ function onlyChild(children) {
 function createReactContext(defaultValue, calculateChangedBits) {
   var _Provider$childContex, _Consumer$contextType;
 
-  var contextProp = '__create-react-context-' + gud__WEBPACK_IMPORTED_MODULE_3___default()() + '__';
+  var contextProp = '__create-react-context-' + getUniqueId() + '__';
 
-  var Provider =
-  /*#__PURE__*/
-  function (_Component) {
-    _babel_runtime_helpers_inheritsLoose__WEBPACK_IMPORTED_MODULE_1___default()(Provider, _Component);
+  var Provider = /*#__PURE__*/function (_Component) {
+    Object(_babel_runtime_helpers_esm_inheritsLoose__WEBPACK_IMPORTED_MODULE_1__["default"])(Provider, _Component);
 
     function Provider() {
       var _this;
@@ -35845,7 +35807,7 @@ function createReactContext(defaultValue, calculateChangedBits) {
           changedBits = typeof calculateChangedBits === 'function' ? calculateChangedBits(oldValue, newValue) : MAX_SIGNED_31_BIT_INT;
 
           if (true) {
-            Object(tiny_warning__WEBPACK_IMPORTED_MODULE_4__["default"])((changedBits & MAX_SIGNED_31_BIT_INT) === changedBits, 'calculateChangedBits: Expected the return value to be a ' + '31-bit integer. Instead received: ' + changedBits);
+            Object(tiny_warning__WEBPACK_IMPORTED_MODULE_3__["default"])((changedBits & MAX_SIGNED_31_BIT_INT) === changedBits, 'calculateChangedBits: Expected the return value to be a ' + '31-bit integer. Instead received: ' + changedBits);
           }
 
           changedBits |= 0;
@@ -35866,10 +35828,8 @@ function createReactContext(defaultValue, calculateChangedBits) {
 
   Provider.childContextTypes = (_Provider$childContex = {}, _Provider$childContex[contextProp] = prop_types__WEBPACK_IMPORTED_MODULE_2___default.a.object.isRequired, _Provider$childContex);
 
-  var Consumer =
-  /*#__PURE__*/
-  function (_Component2) {
-    _babel_runtime_helpers_inheritsLoose__WEBPACK_IMPORTED_MODULE_1___default()(Consumer, _Component2);
+  var Consumer = /*#__PURE__*/function (_Component2) {
+    Object(_babel_runtime_helpers_esm_inheritsLoose__WEBPACK_IMPORTED_MODULE_1__["default"])(Consumer, _Component2);
 
     function Consumer() {
       var _this2;
@@ -35940,6 +35900,7 @@ var index = react__WEBPACK_IMPORTED_MODULE_0___default.a.createContext || create
 
 /* harmony default export */ __webpack_exports__["default"] = (index);
 
+/* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(/*! ./../../../webpack/buildin/global.js */ "./node_modules/webpack/buildin/global.js")))
 
 /***/ }),
 
@@ -64920,7 +64881,7 @@ if (false) {} else {
 /*!***************************************************************!*\
   !*** ./node_modules/react-router-dom/esm/react-router-dom.js ***!
   \***************************************************************/
-/*! exports provided: MemoryRouter, Prompt, Redirect, Route, Router, StaticRouter, Switch, __RouterContext, generatePath, matchPath, useHistory, useLocation, useParams, useRouteMatch, withRouter, BrowserRouter, HashRouter, Link, NavLink */
+/*! exports provided: MemoryRouter, Prompt, Redirect, Route, Router, StaticRouter, Switch, generatePath, matchPath, useHistory, useLocation, useParams, useRouteMatch, withRouter, BrowserRouter, HashRouter, Link, NavLink */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -64943,8 +64904,6 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "StaticRouter", function() { return react_router__WEBPACK_IMPORTED_MODULE_0__["StaticRouter"]; });
 
 /* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "Switch", function() { return react_router__WEBPACK_IMPORTED_MODULE_0__["Switch"]; });
-
-/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "__RouterContext", function() { return react_router__WEBPACK_IMPORTED_MODULE_0__["__RouterContext"]; });
 
 /* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "generatePath", function() { return react_router__WEBPACK_IMPORTED_MODULE_0__["generatePath"]; });
 
@@ -65129,6 +65088,8 @@ var LinkAnchor = forwardRef(function (_ref, forwardedRef) {
   } else {
     props.ref = innerRef;
   }
+  /* eslint-disable-next-line jsx-a11y/anchor-has-content */
+
 
   return react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement("a", props);
 });
@@ -65224,11 +65185,12 @@ var NavLink = forwardRef$1(function (_ref, forwardedRef) {
       exact = _ref.exact,
       isActiveProp = _ref.isActive,
       locationProp = _ref.location,
+      sensitive = _ref.sensitive,
       strict = _ref.strict,
       styleProp = _ref.style,
       to = _ref.to,
       innerRef = _ref.innerRef,
-      rest = Object(_babel_runtime_helpers_esm_objectWithoutPropertiesLoose__WEBPACK_IMPORTED_MODULE_7__["default"])(_ref, ["aria-current", "activeClassName", "activeStyle", "className", "exact", "isActive", "location", "strict", "style", "to", "innerRef"]);
+      rest = Object(_babel_runtime_helpers_esm_objectWithoutPropertiesLoose__WEBPACK_IMPORTED_MODULE_7__["default"])(_ref, ["aria-current", "activeClassName", "activeStyle", "className", "exact", "isActive", "location", "sensitive", "strict", "style", "to", "innerRef"]);
 
   return react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement(react_router__WEBPACK_IMPORTED_MODULE_0__["__RouterContext"].Consumer, null, function (context) {
     !context ?  true ? Object(tiny_invariant__WEBPACK_IMPORTED_MODULE_8__["default"])(false, "You should not use <NavLink> outside a <Router>") : undefined : void 0;
@@ -65240,6 +65202,7 @@ var NavLink = forwardRef$1(function (_ref, forwardedRef) {
     var match = escapedPath ? Object(react_router__WEBPACK_IMPORTED_MODULE_0__["matchPath"])(currentLocation.pathname, {
       path: escapedPath,
       exact: exact,
+      sensitive: sensitive,
       strict: strict
     }) : null;
     var isActive = !!(isActiveProp ? isActiveProp(match, currentLocation) : match);
@@ -65275,6 +65238,7 @@ if (true) {
     exact: prop_types__WEBPACK_IMPORTED_MODULE_4___default.a.bool,
     isActive: prop_types__WEBPACK_IMPORTED_MODULE_4___default.a.func,
     location: prop_types__WEBPACK_IMPORTED_MODULE_4___default.a.object,
+    sensitive: prop_types__WEBPACK_IMPORTED_MODULE_4___default.a.bool,
     strict: prop_types__WEBPACK_IMPORTED_MODULE_4___default.a.bool,
     style: prop_types__WEBPACK_IMPORTED_MODULE_4___default.a.object
   });
@@ -65290,7 +65254,7 @@ if (true) {
 /*!*******************************************************!*\
   !*** ./node_modules/react-router/esm/react-router.js ***!
   \*******************************************************/
-/*! exports provided: MemoryRouter, Prompt, Redirect, Route, Router, StaticRouter, Switch, __RouterContext, generatePath, matchPath, useHistory, useLocation, useParams, useRouteMatch, withRouter */
+/*! exports provided: MemoryRouter, Prompt, Redirect, Route, Router, StaticRouter, Switch, __HistoryContext, __RouterContext, generatePath, matchPath, useHistory, useLocation, useParams, useRouteMatch, withRouter */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -65302,6 +65266,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "Router", function() { return Router; });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "StaticRouter", function() { return StaticRouter; });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "Switch", function() { return Switch; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "__HistoryContext", function() { return historyContext; });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "__RouterContext", function() { return context; });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "generatePath", function() { return generatePath; });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "matchPath", function() { return matchPath; });
@@ -65348,9 +65313,21 @@ var createNamedContext = function createNamedContext(name) {
   return context;
 };
 
+var historyContext =
+/*#__PURE__*/
+createNamedContext("Router-History");
+
+// TODO: Replace with React.createContext once we can assume React 16+
+
+var createNamedContext$1 = function createNamedContext(name) {
+  var context = Object(mini_create_react_context__WEBPACK_IMPORTED_MODULE_5__["default"])();
+  context.displayName = name;
+  return context;
+};
+
 var context =
 /*#__PURE__*/
-createNamedContext("Router");
+createNamedContext$1("Router");
 
 /**
  * The public API for putting history on context.
@@ -65418,14 +65395,16 @@ function (_React$Component) {
 
   _proto.render = function render() {
     return react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(context.Provider, {
-      children: this.props.children || null,
       value: {
         history: this.props.history,
         location: this.state.location,
         match: Router.computeRootMatch(this.state.location.pathname),
         staticContext: this.props.staticContext
       }
-    });
+    }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(historyContext.Provider, {
+      children: this.props.children || null,
+      value: this.props.history
+    }));
   };
 
   return Router;
@@ -66032,7 +66011,7 @@ function useHistory() {
     !(typeof useContext === "function") ?  true ? Object(tiny_invariant__WEBPACK_IMPORTED_MODULE_6__["default"])(false, "You must use React >= 16.8 in order to use useHistory()") : undefined : void 0;
   }
 
-  return useContext(context).history;
+  return useContext(historyContext);
 }
 function useLocation() {
   if (true) {
@@ -66054,7 +66033,9 @@ function useRouteMatch(path) {
     !(typeof useContext === "function") ?  true ? Object(tiny_invariant__WEBPACK_IMPORTED_MODULE_6__["default"])(false, "You must use React >= 16.8 in order to use useRouteMatch()") : undefined : void 0;
   }
 
-  return path ? matchPath(useLocation().pathname, path) : useContext(context).match;
+  var location = useLocation();
+  var match = useContext(context).match;
+  return path ? matchPath(location.pathname, path) : match;
 }
 
 if (true) {
@@ -70625,7 +70606,7 @@ function App() {
   }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_1__["Route"], {
     path: "/search",
     component: _Search__WEBPACK_IMPORTED_MODULE_3__["default"]
-  }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_Footer__WEBPACK_IMPORTED_MODULE_5__["default"], null));
+  }));
 }
 
 /* harmony default export */ __webpack_exports__["default"] = (App); // ReactDOM.render(<App />, document.getElementById("app"));

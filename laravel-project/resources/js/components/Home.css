@@ -48,9 +48,9 @@ body {
     font-size: 40px;
 }
 .form {
-    /* border-radius: 3px;
+    border-radius: 3px;
     padding: 10px 15px;
-    background-color: rgba(0, 0, 0, 0.2); */
+    background-color: rgba(0, 0, 0, 0.2);
 }
 .input {
     width: 100%;
@@ -99,13 +99,13 @@ body {
     background-color: #573f5c;
 }
 #i775 {
-    background-image: url(https://listify-demos.astoundify.com/classic/wp-content/uploads/sites/2/2019/05/Stocksy_txpbfa0785eO7M200_Medium_832542-1.jpg);
+    background-image: url(https://images.unsplash.com/photo-1463183547458-6a2c760d0912?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60);
     background-repeat: no-repeat;
     background-position: left top;
     background-attachment: scroll;
     background-size: cover;
-    height: 90%;
-    min-height: 800px;
+    height: 100%;
+    /* min-height: 800px; */
 }
 #i7bcv {
     line-height: normal;
