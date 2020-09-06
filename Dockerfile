@@ -42,7 +42,6 @@ RUN composer config -g repos.packagist composer https://packagist.kr && \
 # permission
 # RUN chown -R www-data:www-data /var/www/html/storage /var/www/html/bootstrap/cache/
 
-# step 7
 # Bind Port
 EXPOSE 9000
 

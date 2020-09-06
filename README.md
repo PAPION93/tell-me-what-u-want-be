@@ -60,24 +60,3 @@
 4. `cp .env.example .env`
 5. `php artisan key:generate`
 6. localhost 접속 확인
-
-### React 세팅
-
-7. `composer require laravel/ui`
-8. `php artisan ui react`
-9. `npm install`
-10. `npm i react-router-dom`
-11. `npm run dev`
-12. Example Component 출력 확인
-
-13. prop-types 유효성검사  
-`npm i prop-types` 
-14. axios API 요청  
-`npm i axios`  
-15. router  
-`npm install react-router-dom` 
-
-### Material UI
-
-`npm install @material-ui/core`  
-`npm install @material-ui/icons`
