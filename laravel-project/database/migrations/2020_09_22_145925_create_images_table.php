@@ -15,6 +15,10 @@ class CreateImagesTable extends Migration
     {
         Schema::create('images', function (Blueprint $table) {
             $table->id();
+            $table->foreignId('restaurant_id');
+            $table->string('filename');
+            $table->string('original_filename');
+            $table->string('mime_type');
             $table->timestamps();
         });
     }
