@@ -11,4 +11,9 @@ class Restaurant extends Model
         'address',
         'description',
     ];
+
+    public function likes()
+    {
+        return $this->morphToMany('App\Like', 'likable');
+    }
 }
