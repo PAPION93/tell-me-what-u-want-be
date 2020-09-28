@@ -39,6 +39,6 @@ class User extends Authenticatable
 
     public function likes()
     {
-        return $this->morphToMany('App\Like', 'likable');
+        return $this->hasMany('App\Like');
     }
 }

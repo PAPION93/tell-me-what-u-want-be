@@ -6,13 +6,13 @@ use Illuminate\Database\Eloquent\Model;
 
 class Like extends Model
 {
-    public function users()
+    public function user()
     {
-        return $this->morphedByMany('App\Models\User', 'likable');
+        return $this->belongsTo('App\Models\User');
     }
 
-    public function restaurants()
+    public function restaurant()
     {
-        return $this->morphedByMany('App\Models\Restaurant', 'likable');
+        return $this->belongsTo('App\Models\Restaurant');
     }
 }
