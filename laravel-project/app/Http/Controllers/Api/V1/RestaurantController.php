@@ -5,6 +5,7 @@ namespace App\Http\Controllers\Api\V1;
 use App\Http\Controllers\Controller;
 use Illuminate\Http\Request;
 use App\Http\Requests\RestaurantRequest;
+use App\Models\Restaurant;
 
 class RestaurantController extends Controller
 {
@@ -13,7 +14,7 @@ class RestaurantController extends Controller
      *
      * @return \Illuminate\Http\Response
      */
-    public function index(RestaurantRequest $request)
+    public function index(Request $request)
     {
         $client_id = "sOCY0oNpt0S8nLDN38Wp";
         $client_secret = "GtW_LGRrE3";
@@ -47,9 +48,9 @@ class RestaurantController extends Controller
      * @param  \Illuminate\Http\Request  $request
      * @return \Illuminate\Http\Response
      */
-    public function store(Request $request)
+    public function store(RestaurantRequest $request)
     {
-        //
+        return Restaurant::create($request->all());
     }
 
     /**

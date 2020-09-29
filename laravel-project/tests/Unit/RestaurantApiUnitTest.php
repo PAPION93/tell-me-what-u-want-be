@@ -6,15 +6,15 @@ use Tests\TestCase;
 
 class RestaurantApiUnitTest extends TestCase
 {
-    public function it_can_create_an_restaurant()
+    public function test_it_can_create_an_restaurant()
     {
         $data = [
-            'name'  => $this->faker->user_name,
+            'name'  => $this->faker->name,
             'address' => $this->faker->address,
             'description' => $this->faker->sentence,
         ];
 
-        $this->post(route('restaurants.store'), $data)
+        $this->post('/api/v1/restaurant', $data)
             ->assertStatus(201)
             ->assertJson($data);
     }

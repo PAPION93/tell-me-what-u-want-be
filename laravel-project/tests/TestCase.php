@@ -13,13 +13,13 @@ abstract class TestCase extends BaseTestCase
 
     protected $faker;
 
-    public function setUp()
+    public function setUp() : void
     {
         parent::setUp();
         $this->faker = Faker::create();
     }
 
-    public function tearDown()
+    public function tearDown(): void
     {
         $this->artisan('migrate:reset');
         parent::tearDown();
