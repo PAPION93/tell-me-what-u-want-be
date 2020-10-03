@@ -18,4 +18,14 @@ class RestaurantApiUnitTest extends TestCase
             ->assertStatus(201)
             ->assertJson($data);
     }
+
+    public function test_get_restaurants()
+    {
+        $restaurant = factory(Restaurant::class)->create();
+
+        $this->get('/api/v1/restaurant')
+            ->assertOk()
+            ->assertJsonStructure([
+            ]);
+    }
 }
