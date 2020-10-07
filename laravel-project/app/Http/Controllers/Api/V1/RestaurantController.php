@@ -4,12 +4,15 @@ namespace App\Http\Controllers\Api\V1;
 
 use App\Http\Controllers\Controller;
 use Illuminate\Http\Request;
+use App\Repository\Eloquent\RestaurantRepository;
 use App\Http\Requests\RestaurantRequest;
 use App\Models\Restaurant;
 
 class RestaurantController extends Controller
 {
-    public function __construct(RestaurantRepositoryInterface $restaurantRepository)
+    private $restaurantRepository;
+
+    public function __construct(RestaurantRepository $restaurantRepository)
     {
         $this->restaurantRepository = $restaurantRepository;
     }
@@ -18,8 +21,9 @@ class RestaurantController extends Controller
      *
      * @return \Illuminate\Http\Response
      */
-    public function index(Request $request)
+    public function index()
     {
+        return $this->restaurantRepository->all();
     }
 
     /**
@@ -30,7 +34,8 @@ class RestaurantController extends Controller
      */
     public function store(RestaurantRequest $request)
     {
-        return Restaurant::create($request->all());
+        $restaurant = $this->restaurantRepository->create($request->all());
+        return response()->json($restaurant, 201);
     }
 
     /**
