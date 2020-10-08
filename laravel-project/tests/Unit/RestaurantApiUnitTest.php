@@ -3,6 +3,7 @@
 namespace Tests\Unit;
 
 use Tests\TestCase;
+use App\Models\Restaurant;
 
 class RestaurantApiUnitTest extends TestCase
 {
@@ -21,11 +22,15 @@ class RestaurantApiUnitTest extends TestCase
 
     public function test_get_restaurants()
     {
-        $restaurant = factory(Restaurant::class)->create();
+        $restaurant = factory(Restaurant::class, 3)->create();
 
         $this->get('/api/v1/restaurant')
             ->assertOk()
-            ->assertJsonStructure([
-            ]);
+            ->assertJsonStructure([[
+                    'id',
+                    'name',
+                    'address',
+                    'description',
+            ]]);
     }
 }
