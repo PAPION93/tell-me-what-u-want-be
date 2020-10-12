@@ -21,5 +21,6 @@ use Illuminate\Support\Facades\Route;
 Route::prefix('v1')->namespace('Api\V1')->group(function () {
     // Route::middleware(['auth:api', 'verified'])->group(function () {
     Route::apiResource('restaurant', 'RestaurantController');
+    Route::apiResource('image', 'ImageController')->only(['index', 'store']);
     // });
 });

@@ -17,8 +17,8 @@ class CreateImagesTable extends Migration
             $table->id();
             $table->foreignId('restaurant_id')->constrained()->onDelete('cascade');
             $table->string('filename');
-            $table->string('original_filename');
             $table->string('mime_type');
+            $table->string('url');
             $table->timestamps();
         });
     }
