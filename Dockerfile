@@ -4,14 +4,23 @@ FROM php:7.4.3-fpm-alpine3.11
 #     apk add -u vim procps tzdata bash curl zip git zlib-dev libzip-dev icu-dev postgresql-dev && \
 #     rm -rf /var/cache/apk/*
 
+# FROM php:7.4-fpm
+# RUN apt-get update && apt-get install -y \
+#         libfreetype6-dev \
+#         libjpeg62-turbo-dev \
+#         libpng-dev \
+#     && docker-php-ext-configure gd --with-freetype --with-jpeg \
+#     && docker-php-ext-install -j$(nproc) gd
+
 RUN apk update && \
-    apk add bash tzdata zip git zlib-dev libzip-dev icu-dev postgresql-dev && \
+    apk add bash tzdata zip git zlib-dev libzip-dev icu-dev postgresql-dev libfreetype6-dev libjpeg62-turbo-dev libpng-dev && \
     rm -rf /var/cache/apk/*
 
 RUN cp /usr/share/zoneinfo/Asia/Seoul /etc/localtime
 RUN echo "Asia/Seoul" > /etc/timezone
 
-RUN docker-php-ext-install opcache intl bcmath zip pdo_pgsql
+RUN docker-php-ext-configure gd --with-freetype --with-jpeg
+RUN docker-php-ext-install opcache intl bcmath zip pdo_pgsql -j$(nproc) gd
 
 # PHP Config
 RUN cp /usr/local/etc/php/php.ini-production /usr/local/etc/php/php.ini && \
@@ -20,7 +29,7 @@ RUN cp /usr/local/etc/php/php.ini-production /usr/local/etc/php/php.ini && \
     sed -i "s/post_max_size = .*/post_max_size = 12M/" /usr/local/etc/php/php.ini && \
     sed -i "s/;cgi.fix_pathinfo=1/cgi.fix_pathinfo=0/" /usr/local/etc/php/php.ini && \
     sed -i "s/variables_order = .*/variables_order = 'EGPCS'/" /usr/local/etc/php/php.ini && \
-#    sed -i "s/;error_log =.*/error_log = \/proc\/self\/fd\/2/" /usr/local/etc/php-fpm.conf && \
+    #    sed -i "s/;error_log =.*/error_log = \/proc\/self\/fd\/2/" /usr/local/etc/php-fpm.conf && \
     sed -i "s/listen = .*/listen = 9000/" /usr/local/etc/php-fpm.d/www.conf && \
     sed -i "s/pm.max_children = .*/pm.max_children = 200/" /usr/local/etc/php-fpm.d/www.conf && \
     sed -i "s/pm.start_servers = .*/pm.start_servers = 56/" /usr/local/etc/php-fpm.d/www.conf && \

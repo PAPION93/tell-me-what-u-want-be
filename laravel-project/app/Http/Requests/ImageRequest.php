@@ -27,7 +27,7 @@ class ImageRequest extends FormRequest
             'restaurant_id' => 'exists:App\Models\Restaurant,id',
             'filename' => 'string|max:40',
             'image' => 'mimes:jpeg,png|max:1014',
-            'url' => 'string|max:255'
+            // 'url' => 'string|max:255'
         ];
     }
 }
