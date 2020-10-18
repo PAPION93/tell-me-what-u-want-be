@@ -16,9 +16,9 @@ class CreateImagesTable extends Migration
         Schema::create('images', function (Blueprint $table) {
             $table->id();
             $table->foreignId('restaurant_id')->constrained()->onDelete('cascade');
-            $table->string('filename');
-            $table->string('mime_type');
             $table->string('url');
+            $table->string('hash_name');
+            $table->string('original_name');
             $table->timestamps();
         });
     }

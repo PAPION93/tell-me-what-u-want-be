@@ -14,6 +14,11 @@ class Restaurant extends Model
 
     public function likes()
     {
-        return $this->hasMany('App\Like');
+        return $this->hasMany('App\Models\Like');
+    }
+
+    public function images()
+    {
+        return $this->hasMany('App\Models\Image');
     }
 }

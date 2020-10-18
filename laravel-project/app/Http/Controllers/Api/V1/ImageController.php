@@ -27,15 +27,14 @@ class ImageController extends Controller
      */
     public function store(ImageRequest $request)
     {
-        $extension = $request->image->extension();
-        $request->image->storeAs('/public/storage/images', $request->filename . '.' . $extension);
-        $url = Storage::url($request->filename . '.' . $extension);
+        $path = $request->file('image')->store('public/storage/images');
         $image = Image::create([
             'restaurant_id' => $request->restaurant_id,
-            'filename' => $request->filename,
-            'mime_type' => $extension,
-            'url' => $url,
+            'url' => Storage::url($path),
+            'hash_name' => $request->file('image')->hashName(),
+            'original_name' => $request->file('image')->getClientOriginalName(),
         ]);
+
         return response()->json($image, 201);
     }
 

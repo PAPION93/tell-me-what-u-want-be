@@ -8,8 +8,13 @@ class Image extends Model
 {
     protected $fillable = [
         'restaurant_id',
-        'filename',
-        'mime_type',
         'url',
+        'hash_name',
+        'original_name',
     ];
+
+    public function restaurant()
+    {
+        return $this->belongsTo('App\Models\Restaurant');
+    }
 }

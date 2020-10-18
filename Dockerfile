@@ -13,14 +13,14 @@ FROM php:7.4.3-fpm-alpine3.11
 #     && docker-php-ext-install -j$(nproc) gd
 
 RUN apk update && \
-    apk add bash tzdata zip git zlib-dev libzip-dev icu-dev postgresql-dev libfreetype6-dev libjpeg62-turbo-dev libpng-dev && \
+    apk add bash tzdata zip git zlib-dev libzip-dev icu-dev postgresql-dev freetype-dev libjpeg-turbo-dev libpng-dev && \
     rm -rf /var/cache/apk/*
 
 RUN cp /usr/share/zoneinfo/Asia/Seoul /etc/localtime
 RUN echo "Asia/Seoul" > /etc/timezone
 
-RUN docker-php-ext-configure gd --with-freetype --with-jpeg
-RUN docker-php-ext-install opcache intl bcmath zip pdo_pgsql -j$(nproc) gd
+# RUN docker-php-ext-configure gd --with-freetype --with-jpeg
+RUN docker-php-ext-install opcache intl bcmath zip pdo_pgsql gd
 
 # PHP Config
 RUN cp /usr/local/etc/php/php.ini-production /usr/local/etc/php/php.ini && \

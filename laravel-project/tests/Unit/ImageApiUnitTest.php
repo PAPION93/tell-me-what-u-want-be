@@ -17,21 +17,15 @@ class ImageApiUnitTest extends TestCase
     public function test_it_can_create_an_image()
     {
         $restaurant = factory(Restaurant::class)->create();
-
-        Storage::fake('photos');
+        $file = UploadedFile::fake()->image('image.png');
 
         $data = [
-            'filename' => $this->faker->title,
-            'image' => UploadedFile::fake()->image('image.jpg'),
             'restaurant_id' => $restaurant->id,
+            'image' => $file,
         ];
 
         $response = $this->json('POST', '/api/v1/image', $data);
-        // $response = $this->postJson('/api/v1/image', $data);
-
-        $response->dump();
-        Storage::disk('photos')->assertExists('image.jpg');
-        $response->assertStatus(201)
-                 ->assertJson($data);
+        $response->assertStatus(201);
+        Storage::assertExists('public/storage/images/' . $file->hashName());
     }
 }
