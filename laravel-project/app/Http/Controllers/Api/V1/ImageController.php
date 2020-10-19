@@ -4,11 +4,18 @@ namespace App\Http\Controllers\API\V1;
 
 use App\Http\Controllers\Controller;
 use App\Http\Requests\ImageRequest;
+use App\Repository\Eloquent\ImageRepository;
 use Illuminate\Support\Facades\Storage;
-use App\Models\Image;
 
 class ImageController extends Controller
 {
+    private $imageRepository;
+
+    public function __construct(ImageRepository $imageRepository)
+    {
+        $this->imageRepository = $imageRepository;
+    }
+
     /**
      * Display a listing of the resource.
      *
@@ -27,14 +34,7 @@ class ImageController extends Controller
      */
     public function store(ImageRequest $request)
     {
-        $path = $request->file('image')->store('public/storage/images');
-        $image = Image::create([
-            'restaurant_id' => $request->restaurant_id,
-            'url' => Storage::url($path),
-            'hash_name' => $request->file('image')->hashName(),
-            'original_name' => $request->file('image')->getClientOriginalName(),
-        ]);
-
+        $image = $this->imageRepository->createImage($request);
         return response()->json($image, 201);
     }
 
