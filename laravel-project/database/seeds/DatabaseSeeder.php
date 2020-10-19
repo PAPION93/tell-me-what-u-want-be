@@ -1,6 +1,8 @@
 <?php
 
 use Illuminate\Database\Seeder;
+use App\Models\Restaurant;
+use App\Models\Image;
 
 class DatabaseSeeder extends Seeder
 {
@@ -11,6 +13,13 @@ class DatabaseSeeder extends Seeder
      */
     public function run()
     {
-        $this->call(RestaurantSeeder::class);
+        factory(Restaurant::class, 20)
+            ->create()
+            ->each(function ($restaurant) {
+                factory(Image::class, 5)
+                ->create([
+                    'restaurant_id' => $restaurant
+                ]);
+            });
     }
 }
