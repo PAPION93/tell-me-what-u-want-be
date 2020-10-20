@@ -6,7 +6,6 @@ use App\Http\Controllers\Controller;
 use Illuminate\Http\Request;
 use App\Repository\Eloquent\RestaurantRepository;
 use App\Http\Requests\RestaurantRequest;
-use App\Models\Restaurant;
 
 class RestaurantController extends Controller
 {
@@ -16,6 +15,7 @@ class RestaurantController extends Controller
     {
         $this->restaurantRepository = $restaurantRepository;
     }
+
     /**
      * Display a listing of the resource.
      *
