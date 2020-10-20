@@ -20,6 +20,6 @@ class RestaurantImageController extends Controller
 
     public function index()
     {
-        return Restaurant::with('image')->get();
+        return Restaurant::with('images')->get();
     }
 }

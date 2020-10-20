@@ -23,7 +23,7 @@ class RestaurantApiUnitTest extends TestCase
 
     public function test_get_restaurants()
     {
-        $restaurant = factory(Restaurant::class, 3)->create();
+        factory(Restaurant::class, 3)->create();
 
         $this->get('/api/v1/restaurants')
             ->assertOk()
@@ -45,8 +45,20 @@ class RestaurantApiUnitTest extends TestCase
                         'restaurant_id' => $restaurant
                     ]);
             });
-        $res = $this->get('/api/v1/restaurants/images');
-        $res->dump();
-        $res->assertOk();
+
+        $this->get('/api/v1/restaurants-images')
+            ->assertJsonStructure([[
+                'id',
+                'name',
+                'address',
+                'description',
+                'images' => [[
+                    'id',
+                    'restaurant_id',
+                    'hash_name',
+                    'original_name',
+                ]]
+            ]])
+            ->assertOk();
     }
 }
