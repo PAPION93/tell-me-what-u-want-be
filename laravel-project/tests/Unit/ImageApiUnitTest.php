@@ -30,7 +30,7 @@ class ImageApiUnitTest extends TestCase
 
         $response = $this->json('POST', '/api/v1/images', $data);
         $response->assertStatus(201);
-        Storage::assertExists('public/storage/images/' . $file->hashName());
+        Storage::assertExists('public/' . $file->hashName());
     }
 
     public function test_it_can_create_an_jpg()
@@ -45,6 +45,15 @@ class ImageApiUnitTest extends TestCase
 
         $response = $this->json('POST', '/api/v1/images', $data);
         $response->assertStatus(201);
-        Storage::assertExists('public/storage/images/' . $file->hashName());
+        Storage::assertExists('public/' . $file->hashName());
+    }
+
+    public function test_it_can_show_image()
+    {
+        $file = UploadedFile::fake()->image('image.jpg');
+        $file->store('public');
+        $this->get('/api/v1/images/' . $file->hashName())
+            ->assertOk();
+        Storage::assertExists('public/' . $file->hashName());
     }
 }

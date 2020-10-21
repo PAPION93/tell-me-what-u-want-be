@@ -47,7 +47,7 @@ class ImageController extends Controller
      */
     public function show($name)
     {
-        return response()->file(public_path($name));
+        return response()->file(storage_path('app/public/' . $name));
     }
 
     /**
