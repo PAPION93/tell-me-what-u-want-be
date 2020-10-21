@@ -2,10 +2,10 @@
 
 namespace App\Http\Controllers\Api\V1;
 
-use App\Http\Controllers\Controller;
-use App\Repository\Eloquent\RestaurantRepository;
-use App\Repository\Eloquent\ImageRepository;
 use App\Models\Restaurant;
+use App\Http\Controllers\Controller;
+use App\Repository\Eloquent\ImageRepository;
+use App\Repository\Eloquent\RestaurantRepository;
 
 class RestaurantImageController extends Controller
 {

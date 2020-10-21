@@ -2,10 +2,10 @@
 
 namespace App\Http\Controllers\Api\V1;
 
-use App\Http\Controllers\Controller;
 use Illuminate\Http\Request;
-use App\Repository\Eloquent\RestaurantRepository;
+use App\Http\Controllers\Controller;
 use App\Http\Requests\RestaurantRequest;
+use App\Repository\Eloquent\RestaurantRepository;
 
 class RestaurantController extends Controller
 {
