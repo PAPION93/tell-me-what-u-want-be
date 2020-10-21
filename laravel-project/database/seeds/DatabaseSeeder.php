@@ -13,13 +13,13 @@ class DatabaseSeeder extends Seeder
      */
     public function run()
     {
-        factory(Restaurant::class, 20)
+        factory(Restaurant::class, 10)
             ->create()
             ->each(function ($restaurant) {
                 factory(Image::class, 5)
-                ->create([
-                    'restaurant_id' => $restaurant
-                ]);
+                    ->create([
+                        'restaurant_id' => $restaurant
+                    ]);
             });
     }
 }

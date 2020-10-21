@@ -25,10 +25,10 @@ class ImageRepository extends BaseRepository implements ImageRepositoryInterface
      */
     public function createImage(ImageRequest $request): Model
     {
-        $path = $request->file('image')->store('public/storage/images');
+        $path = $request->file('image')->store('public');
         return $this->model->create([
             'restaurant_id' => $request->restaurant_id,
-            'url' => Storage::url($path),
+            'url' => $path,
             'hash_name' => $request->file('image')->hashName(),
             'original_name' => $request->file('image')->getClientOriginalName(),
         ]);

@@ -2,10 +2,11 @@
 
 namespace App\Http\Controllers\API\V1;
 
-use App\Http\Controllers\Controller;
+use Illuminate\Http\Request;
 use App\Http\Requests\ImageRequest;
-use App\Repository\Eloquent\ImageRepository;
+use App\Http\Controllers\Controller;
 use Illuminate\Support\Facades\Storage;
+use App\Repository\Eloquent\ImageRepository;
 
 class ImageController extends Controller
 {
@@ -41,12 +42,12 @@ class ImageController extends Controller
     /**
      * Display the specified resource.
      *
-     * @param  int  $id
+     * @param  string  $name
      * @return \Illuminate\Http\Response
      */
-    public function show($id)
+    public function show($name)
     {
-        //
+        return response()->file(public_path($name));
     }
 
     /**
