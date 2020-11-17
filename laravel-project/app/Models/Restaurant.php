@@ -9,7 +9,9 @@ class Restaurant extends Model
     protected $fillable = [
         'name',
         'address',
-        'description',
+        'lat',
+        'lng',
+        'description'
     ];
 
     public function likes()

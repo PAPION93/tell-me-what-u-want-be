@@ -9,6 +9,8 @@ $factory->define(Restaurant::class, function (Faker $faker) {
     return [
         'name' => $faker->name,
         'address' => $faker->address,
+        'lat' => $faker->latitude,
+        'lng' => $faker->longitude,
         'description' => $faker->sentence,
     ];
 });

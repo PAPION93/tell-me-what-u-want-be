@@ -15,11 +15,11 @@ class CreateImagesTable extends Migration
     {
         Schema::create('images', function (Blueprint $table) {
             $table->id();
+            $table->timestamps();
             $table->foreignId('restaurant_id')->constrained()->onDelete('cascade');
             $table->string('url');
             $table->string('hash_name');
             $table->string('original_name');
-            $table->timestamps();
         });
     }
 

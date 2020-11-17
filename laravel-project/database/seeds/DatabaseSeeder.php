@@ -18,7 +18,7 @@ class DatabaseSeeder extends Seeder
             ->each(function ($restaurant) {
                 factory(Image::class, 5)
                     ->create([
-                        'restaurant_id' => $restaurant
+                        'restaurant_id' => $restaurant->id
                     ]);
             });
     }
