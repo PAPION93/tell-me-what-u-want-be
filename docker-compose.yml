@@ -11,6 +11,7 @@ services:
       - ./laravel-project:/var/www/html
     networks:
       - laravel
+      - internal
 
   nginx:
     container_name: tell-me-proxy
@@ -28,4 +29,6 @@ services:
 
 networks:
   laravel:
+    external: true
+  internal:
     external: true

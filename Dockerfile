@@ -1,17 +1,5 @@
 FROM php:7.4.3-fpm-alpine3.11
 
-# RUN apk update && \
-#     apk add -u vim procps tzdata bash curl zip git zlib-dev libzip-dev icu-dev postgresql-dev && \
-#     rm -rf /var/cache/apk/*
-
-# FROM php:7.4-fpm
-# RUN apt-get update && apt-get install -y \
-#         libfreetype6-dev \
-#         libjpeg62-turbo-dev \
-#         libpng-dev \
-#     && docker-php-ext-configure gd --with-freetype --with-jpeg \
-#     && docker-php-ext-install -j$(nproc) gd
-
 RUN apk update && \
     apk add bash tzdata zip git zlib-dev libzip-dev icu-dev postgresql-dev freetype-dev libjpeg-turbo-dev libpng-dev && \
     rm -rf /var/cache/apk/*
@@ -19,8 +7,6 @@ RUN apk update && \
 RUN cp /usr/share/zoneinfo/Asia/Seoul /etc/localtime
 RUN echo "Asia/Seoul" > /etc/timezone
 
-# RUN docker-php-ext-configure gd --with-freetype --with-jpeg
-# RUN docker-php-ext-configure gd --with-freetype-dir=/usr/include/ --with-jpeg-dir=/usr/include/
 RUN docker-php-ext-install opcache intl bcmath zip pdo_pgsql gd
 
 # PHP Config
@@ -42,13 +28,9 @@ COPY ./laravel-project /var/www/html
 
 RUN curl -sS https://getcomposer.org/installer | php
 RUN mv composer.phar /usr/bin/composer
-RUN ["/bin/bash", "-c", "echo PATH=$PATH:~/.composer/vendor/bin/ >> ~/.bashrc"]
-RUN ["/bin/bash", "-c", "source ~/.bashrc"]
 
 WORKDIR /var/www/html
-RUN composer config -g repos.packagist composer https://packagist.kr && \
-    composer global require hirak/prestissimo && \
-    composer global install --no-dev --no-scripts && \
+RUN composer install --no-dev --no-scripts && \
     chown -R www-data:www-data /var/www/html/storage /var/www/html/bootstrap/cache/
 
 # Bind Port
