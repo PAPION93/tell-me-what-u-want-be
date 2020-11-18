@@ -1,6 +1,5 @@
 <?php
 
-use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -16,8 +15,15 @@ use Illuminate\Support\Facades\Route;
 
 Route::prefix('v1')->namespace('Api\V1')->group(function () {
     // Route::middleware(['auth:api', 'verified'])->group(function () {
+    Route::apiResource('users', 'UserController');
+    Route::get('users/me/favs', 'UserController@getFavs');
+    Route::put('users/me/favs', 'UserController@updateFavs');
+
     Route::apiResource('restaurants', 'RestaurantController');
     Route::apiResource('images', 'ImageController')->only(['index', 'store', 'show']);
-    Route::apiResource('restaurants-images', 'RestaurantImageController')->only(['index']);
     // });
+
+    Route::get('test', function () {
+        phpinfo();
+    });
 });

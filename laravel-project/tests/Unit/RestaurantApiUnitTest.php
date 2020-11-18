@@ -13,6 +13,8 @@ class RestaurantApiUnitTest extends TestCase
         $data = [
             'name' => $this->faker->name,
             'address' => $this->faker->address,
+            'lat' => $this->faker->latitude,
+            'lng' => $this->faker->longitude,
             'description' => $this->faker->sentence,
         ];
 
@@ -27,12 +29,16 @@ class RestaurantApiUnitTest extends TestCase
 
         $this->get('/api/v1/restaurants')
             ->assertOk()
-            ->assertJsonStructure([[
-                'id',
-                'name',
-                'address',
-                'description',
-            ]]);
+            ->assertJsonStructure([
+                'current_page',
+                'data' => [[
+                    'id',
+                    'name',
+                    'address',
+                    'lat',
+                    'lng',
+                    'description',
+                ]]]);
     }
 
     public function test_get_restaurants_with_images()
@@ -46,19 +52,24 @@ class RestaurantApiUnitTest extends TestCase
                     ]);
             });
 
-        $this->get('/api/v1/restaurants-images')
-            ->assertJsonStructure([[
-                'id',
-                'name',
-                'address',
-                'description',
-                'images' => [[
+        $this->get('/api/v1/restaurants')
+            ->assertOk()
+            ->assertJsonStructure([
+                'current_page',
+                'data' => [[
                     'id',
-                    'restaurant_id',
-                    'hash_name',
-                    'original_name',
+                    'name',
+                    'address',
+                    'lat',
+                    'lng',
+                    'description',
+                    'images' => [[
+                        'id',
+                        'restaurant_id',
+                        'hash_name',
+                        'original_name',
+                    ]]
                 ]]
-            ]])
-            ->assertOk();
+            ]);
     }
 }

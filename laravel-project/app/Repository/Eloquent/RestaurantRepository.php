@@ -4,7 +4,6 @@ namespace App\Repository\Eloquent;
 
 use App\Models\Restaurant;
 use App\Repository\RestaurantRepositoryInterface;
-use Illuminate\Support\Collection;
 
 class RestaurantRepository extends BaseRepository implements RestaurantRepositoryInterface
 {
@@ -18,11 +17,8 @@ class RestaurantRepository extends BaseRepository implements RestaurantRepositor
         parent::__construct($model);
     }
 
-    /**
-     * @return Collection
-     */
-    public function all(): Collection
+    public function get()
     {
-        return $this->model->all();
+        return $this->model->with('images')->paginate(20);
     }
 }

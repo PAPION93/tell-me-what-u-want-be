@@ -2,8 +2,9 @@
 
 namespace App\Repository\Eloquent;
 
-use App\Repository\EloquentRepositoryInterface;
 use Illuminate\Database\Eloquent\Model;
+use Illuminate\Database\Eloquent\Collection;
+use App\Repository\EloquentRepositoryInterface;
 
 class BaseRepository implements EloquentRepositoryInterface
 {
@@ -20,6 +21,11 @@ class BaseRepository implements EloquentRepositoryInterface
     public function __construct(Model $model)
     {
         $this->model = $model;
+    }
+
+    public function all(): Collection
+    {
+        return $this->model->all();
     }
 
     /**

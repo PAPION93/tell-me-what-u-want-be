@@ -13,12 +13,8 @@ class ImageApiUnitTest extends TestCase
     {
     }
 
-    /**
-     * A basic unit test example.
-     *
-     * @return void
-     */
-    public function test_it_can_create_an_png()
+    /** @test */
+    public function it_can_create_an_png()
     {
         $restaurant = factory(Restaurant::class)->create();
         $file = UploadedFile::fake()->image('image.png');
@@ -33,7 +29,8 @@ class ImageApiUnitTest extends TestCase
         Storage::assertExists('public/' . $file->hashName());
     }
 
-    public function test_it_can_create_an_jpg()
+    /** @ignore */
+    public function it_can_create_an_jpg()
     {
         $restaurant = factory(Restaurant::class)->create();
         $file = UploadedFile::fake()->image('image.jpg');
@@ -48,7 +45,8 @@ class ImageApiUnitTest extends TestCase
         Storage::assertExists('public/' . $file->hashName());
     }
 
-    public function test_it_can_show_image()
+    /** @ignore */
+    public function it_can_show_image()
     {
         $file = UploadedFile::fake()->image('image.jpg');
         $file->store('public');

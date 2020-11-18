@@ -2,20 +2,11 @@
 
 namespace App\Http\Controllers\Api\V1;
 
-use Illuminate\Http\Request;
 use App\Http\Controllers\Controller;
-use App\Http\Requests\RestaurantRequest;
-use App\Repository\Eloquent\RestaurantRepository;
+use Illuminate\Http\Request;
 
-class RestaurantController extends Controller
+class UserController extends Controller
 {
-    private $restaurantRepository;
-
-    public function __construct(RestaurantRepository $restaurantRepository)
-    {
-        $this->restaurantRepository = $restaurantRepository;
-    }
-
     /**
      * Display a listing of the resource.
      *
@@ -23,7 +14,17 @@ class RestaurantController extends Controller
      */
     public function index()
     {
-        return $this->restaurantRepository->get();
+        //
+    }
+
+    /**
+     * Show the form for creating a new resource.
+     *
+     * @return \Illuminate\Http\Response
+     */
+    public function create()
+    {
+        //
     }
 
     /**
@@ -32,10 +33,9 @@ class RestaurantController extends Controller
      * @param  \Illuminate\Http\Request  $request
      * @return \Illuminate\Http\Response
      */
-    public function store(RestaurantRequest $request)
+    public function store(Request $request)
     {
-        $restaurants = $this->restaurantRepository->create($request->all());
-        return response()->json($restaurants, 201);
+        //
     }
 
     /**
@@ -46,7 +46,18 @@ class RestaurantController extends Controller
      */
     public function show($id)
     {
-        return $this->restaurantRepository->find($id);
+        //
+    }
+
+    /**
+     * Show the form for editing the specified resource.
+     *
+     * @param  int  $id
+     * @return \Illuminate\Http\Response
+     */
+    public function edit($id)
+    {
+        //
     }
 
     /**
@@ -70,5 +81,15 @@ class RestaurantController extends Controller
     public function destroy($id)
     {
         //
+    }
+
+    public function getFavs()
+    {
+        return 1;
+    }
+
+    public function updateFavs()
+    {
+        return 2;
     }
 }
