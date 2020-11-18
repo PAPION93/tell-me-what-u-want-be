@@ -14,14 +14,19 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::prefix('v1')->namespace('Api\V1')->group(function () {
-    // Route::middleware(['auth:api', 'verified'])->group(function () {
-    Route::apiResource('users', 'UserController');
-    Route::get('users/me/favs', 'UserController@getFavs');
-    Route::put('users/me/favs', 'UserController@updateFavs');
+    Route::group(['middleware' => 'api'], function () {
+        Route::post('register', 'AuthController@register');
+        Route::post('login', 'AuthController@login');
+        Route::post('logout', 'AuthController@logout');
+        Route::post('refresh', 'AuthController@refresh');
 
-    Route::apiResource('restaurants', 'RestaurantController');
-    Route::apiResource('images', 'ImageController')->only(['index', 'store', 'show']);
-    // });
+        // Route::apiResource('users', 'UserController');
+        Route::get('users/me/favs', 'UserController@getFavs');
+        Route::put('users/me/favs', 'UserController@updateFavs');
+
+        Route::apiResource('restaurants', 'RestaurantController');
+        Route::apiResource('images', 'ImageController')->only(['index', 'store', 'show']);
+    });
 
     Route::get('test', function () {
         phpinfo();
