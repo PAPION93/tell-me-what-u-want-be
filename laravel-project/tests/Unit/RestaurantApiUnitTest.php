@@ -25,7 +25,7 @@ class RestaurantApiUnitTest extends TestCase
 
     public function test_get_restaurants()
     {
-        factory(Restaurant::class, 3)->create();
+        Restaurant::factory()->count(5)->create();
 
         $this->get('/api/v1/restaurants')
             ->assertOk()
@@ -43,10 +43,10 @@ class RestaurantApiUnitTest extends TestCase
 
     public function test_get_restaurants_with_images()
     {
-        factory(Restaurant::class, 2)
+        Restaurant::factory()
             ->create()
             ->each(function ($restaurant) {
-                factory(Image::class, 3)
+                Image::factory()
                     ->create([
                         'restaurant_id' => $restaurant
                     ]);

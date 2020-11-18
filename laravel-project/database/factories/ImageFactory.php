@@ -1,22 +1,37 @@
 <?php
 
-/** @var \Illuminate\Database\Eloquent\Factory $factory */
+namespace Database\Factories;
 
 use App\Models\Image;
 use App\Models\Restaurant;
-use Faker\Generator as Faker;
 use Illuminate\Http\UploadedFile;
+use Illuminate\Database\Eloquent\Factories\Factory;
 
-$factory->define(Image::class, function (Faker $faker) {
-    $file = UploadedFile::fake()->image('image.png');
-    $path = $file->store('public');
+class ImageFactory extends Factory
+{
+    /**
+     * The name of the factory's corresponding model.
+     *
+     * @var string
+     */
+    protected $model = Image::class;
 
-    return [
-        'restaurant_id' => function () {
-            return factory(Restaurant::class)->create()->id;
-        },
-        'url' => $path,
-        'hash_name' => $file->hashName(),
-        'original_name' => $file->getClientOriginalName(),
-    ];
-});
+    /**
+     * Define the model's default state.
+     *
+     * @return array
+     */
+    public function definition()
+    {
+        $file = UploadedFile::fake()->image('image.png');
+        $path = $file->store('public');
+        return [
+            'restaurant_id' => function () {
+                return Restaurant::factory()->create()->id;
+            },
+            'url' => $path,
+            'hash_name' => $file->hashName(),
+            'original_name' => $file->getClientOriginalName(),
+        ];
+    }
+}

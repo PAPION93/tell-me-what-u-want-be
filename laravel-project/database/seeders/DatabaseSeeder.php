@@ -1,8 +1,10 @@
 <?php
 
-use Illuminate\Database\Seeder;
-use App\Models\Restaurant;
+namespace Database\Seeders;
+
 use App\Models\Image;
+use App\Models\Restaurant;
+use Illuminate\Database\Seeder;
 
 class DatabaseSeeder extends Seeder
 {
@@ -13,10 +15,12 @@ class DatabaseSeeder extends Seeder
      */
     public function run()
     {
-        factory(Restaurant::class, 10)
+        Restaurant::factory()
+            ->count(10)
             ->create()
             ->each(function ($restaurant) {
-                factory(Image::class, 5)
+                Image::factory()
+                    ->count(5)
                     ->create([
                         'restaurant_id' => $restaurant->id
                     ]);

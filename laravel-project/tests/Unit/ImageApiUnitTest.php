@@ -16,7 +16,7 @@ class ImageApiUnitTest extends TestCase
     /** @test */
     public function it_can_create_an_png()
     {
-        $restaurant = factory(Restaurant::class)->create();
+        $restaurant = Restaurant::factory()->create();
         $file = UploadedFile::fake()->image('image.png');
 
         $data = [
@@ -32,7 +32,7 @@ class ImageApiUnitTest extends TestCase
     /** @ignore */
     public function it_can_create_an_jpg()
     {
-        $restaurant = factory(Restaurant::class)->create();
+        $restaurant = Restaurant::factory()->create();
         $file = UploadedFile::fake()->image('image.jpg');
 
         $data = [
