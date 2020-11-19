@@ -7,19 +7,19 @@ use App\Models\User;
 
 class AuthTest extends TestCase
 {
-    /**
-     * A basic feature test example.
-     *
-     * @return void
-     */
-    public function testExample()
+    /** @test */
+    public function login()
     {
         $user = User::factory()->create();
         $response = $this->json('POST', '/api/v1/login', [
             'email' => $user->email,
             'password' => 'password',
         ]);
-        $response->dump();
-        $response->assertStatus(200);
+        $response->assertStatus(200)
+                ->assertJsonStructure([
+                    'access_token',
+                    'token_type',
+                    'expires_in',
+                ]);
     }
 }
