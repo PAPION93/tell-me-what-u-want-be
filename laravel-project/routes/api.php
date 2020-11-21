@@ -15,25 +15,24 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::prefix('v1')->namespace('Api\V1')->group(function () {
-    // Route::group(['middleware' => 'api'], function () {
-    Route::post('register', 'AuthController@register');
-    Route::get('register', 'AuthController@register');
-    Route::post('login', 'AuthController@login');
-    Route::post('logout', 'AuthController@logout');
-    Route::post('refresh', 'AuthController@refresh');
+    Route::group(['middleware' => 'api'], function () {
+        Route::post('register', 'AuthController@register');
+        Route::post('login', 'AuthController@login');
+        Route::post('logout', 'AuthController@logout');
+        Route::post('refresh', 'AuthController@refresh');
 
-    // Route::apiResource('users', 'UserController');
+        // Route::apiResource('users', 'UserController');
 
-    Route::apiResource('restaurants', 'RestaurantController');
-    Route::apiResource('images', 'ImageController')->only(['index', 'store', 'show']);
+        Route::apiResource('restaurants', 'RestaurantController');
+        Route::apiResource('images', 'ImageController')->only(['index', 'store', 'show']);
 
-    Route::group(['middleware' => 'jwt.auth'], function () {
-        Route::get('users/me/favs', 'UserController@getFavs');
-        Route::put('users/me/favs', 'UserController@updateFavs');
+        Route::group(['middleware' => 'jwt.auth'], function () {
+            Route::get('users/me/favs', 'UserController@getFavs');
+            Route::put('users/me/favs', 'UserController@updateFavs');
+        });
+
+        Route::get('test', function () {
+            return Hash::make('123') . '///' . bcrypt('123') ;
+        });
     });
-
-    Route::get('test', function () {
-        return Hash::make('123') . '///' . bcrypt('123') ;
-    });
-    // });
 });

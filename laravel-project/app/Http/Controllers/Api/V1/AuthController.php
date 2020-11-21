@@ -12,21 +12,17 @@ class AuthController extends Controller
 {
     public function __construct()
     {
-        $this->middleware('auth:api', ['except' => ['login', 'register']]);
+        $this->middleware('jwt.auth', ['only' => ['refresh', 'logout']]);
     }
 
     public function register(RegisterRequest $request)
     {
-        return response([
-            'status' => 'success',
-        ], 200);
-
         $user = new User();
         $user->email = $request->email;
         $user->name = $request->name;
         $user->password = bcrypt($request->password);
         $user->save();
-        return response([
+        return response()->json([
             'status' => 'success',
             'data' => $user
         ], 200);
