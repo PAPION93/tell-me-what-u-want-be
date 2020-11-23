@@ -69,6 +69,6 @@ class RestaurantController extends Controller
      */
     public function destroy($id)
     {
-        //
+        $this->restaurantRepository->delete($id);
     }
 }
