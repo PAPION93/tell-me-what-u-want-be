@@ -4,6 +4,7 @@ namespace App\Http\Controllers\Api\V1;
 
 use App\Models\User;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Log;
 use App\Http\Controllers\Controller;
 use App\Http\Requests\RegisterRequest;
 use Illuminate\Support\Facades\Validator;
@@ -12,7 +13,7 @@ class AuthController extends Controller
 {
     public function __construct()
     {
-        $this->middleware('jwt.auth', ['only' => ['refresh', 'logout']]);
+        $this->middleware('jwt.auth')->only(['refresh', 'logout']);
     }
 
     public function register(RegisterRequest $request)

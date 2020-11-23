@@ -37,22 +37,33 @@ class AuthTest extends TestCase
                     'token_type',
                     'expires_in',
                 ]);
+        return $response;
     }
 
     /** @test */
     public function refresh()
     {
-        $user = User::factory()->create();
-        $response = $this->json('POST', '/api/v1/login', [
-            'email' => $user->email,
-            'password' => 'password',
-        ])
-        ->assertStatus(200);
+        $response = $this->login();
 
-        $response = $this->withHeaders([
-            'Authorization' => 'Bearer ' . $response['access_token'],
-        ])->json('POST', '/api/v1/refresh', []);
-        $response->dump();
-        $response->assertStatus(200);
+        $this->withHeaders(['Authorization' => 'Bearer ' . $response['access_token'], ]);
+        $response = $this->json('POST', '/api/v1/refresh', []);
+        $response->assertStatus(200)
+        ->assertJsonStructure([
+            'access_token',
+            'token_type',
+            'expires_in',
+        ]);
+    }
+
+    /** @test */
+    public function logout()
+    {
+        $response = $this->login();
+        $this->withHeaders(['Authorization' => 'Bearer ' . $response['access_token'], ]);
+        $response = $this->json('POST', '/api/v1/logout', []);
+        $response->assertStatus(200)
+        ->assertJson([
+            'message' => 'Successfully logged out'
+        ]);
     }
 }
