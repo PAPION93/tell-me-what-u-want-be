@@ -23,10 +23,13 @@ class RestaurantFactory extends Factory
     {
         return [
             'name' => $this->faker->name,
+            'category' => $this->faker->name,
             'address' => $this->faker->address,
+            'google_point' => $this->faker->randomFloat(1, 0, 5),
+            'naver_point' => $this->faker->randomFloat(1, 0, 5),
+            'dining_point' => $this->faker->randomFloat(1, 0, 5),
             'lat' => $this->faker->latitude,
             'lng' => $this->faker->longitude,
-            'description' => $this->faker->sentence,
         ];
     }
 }

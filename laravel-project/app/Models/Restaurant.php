@@ -11,10 +11,13 @@ class Restaurant extends Model
 
     protected $fillable = [
         'name',
+        'category',
         'address',
+        'google_point',
+        'naver_point',
+        'dining_point',
         'lat',
         'lng',
-        'description'
     ];
 
     public function likes()

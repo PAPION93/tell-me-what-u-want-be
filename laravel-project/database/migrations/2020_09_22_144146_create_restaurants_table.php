@@ -17,10 +17,13 @@ class CreateRestaurantsTable extends Migration
             $table->id();
             $table->timestamps();
             $table->string('name');
+            $table->text('category');
             $table->text('address');
+            $table->string('google_point');
+            $table->string('naver_point');
+            $table->string('dining_point');
             $table->float('lat', 8, 2);
             $table->float('lng', 8, 2);
-            $table->text('description');
         });
     }
 
