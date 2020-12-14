@@ -5,13 +5,13 @@ namespace App\Http\Controllers\Api\V1;
 use Illuminate\Http\Request;
 use App\Http\Controllers\Controller;
 use App\Http\Requests\RestaurantRequest;
-use App\Repository\Eloquent\RestaurantRepository;
+use App\Repository\RestaurantRepositoryInterface;
 
 class RestaurantController extends Controller
 {
     private $restaurantRepository;
 
-    public function __construct(RestaurantRepository $restaurantRepository)
+    public function __construct(RestaurantRepositoryInterface $restaurantRepository)
     {
         $this->restaurantRepository = $restaurantRepository;
     }
