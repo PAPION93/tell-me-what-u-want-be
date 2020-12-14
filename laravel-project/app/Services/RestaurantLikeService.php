@@ -5,7 +5,7 @@ namespace App\Services;
 use App\Repository\LikeRepositoryInterface;
 use App\Repository\RestaurantRepositoryInterface;
 
-class LikeService
+class RestaurantLikeService
 {
     private $likeRepo;
     private $restaurantRepo;
@@ -16,9 +16,9 @@ class LikeService
         $this->restaurantRepo = $restaurantRepo;
     }
 
-    public function likes()
+    public function get()
     {
-        return $this->likeRepo->get();
+        return $this->restaurantRepo->getLikes();
     }
 
     public function like($restaurantId)

@@ -2,23 +2,22 @@
 
 namespace App\Http\Controllers\Api\V1;
 
-use App\Models\Like;
 use Illuminate\Http\Request;
-use App\Services\LikeService;
+use App\Services\RestaurantLikeService;
 use App\Http\Controllers\Controller;
 
-class LikeController extends Controller
+class RestaurantLikeController extends Controller
 {
     private $likeService;
 
-    public function __construct(LikeService $likeService)
+    public function __construct(RestaurantLikeService $likeService)
     {
         $this->likeService = $likeService;
     }
 
     public function index()
     {
-        return $this->likeService->likes();
+        return $this->likeService->get();
     }
 
     public function store(Request $request)
