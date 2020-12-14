@@ -6,6 +6,7 @@ use App\Models\User;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Log;
 use App\Http\Controllers\Controller;
+use Illuminate\Support\Facades\Auth;
 use App\Http\Requests\RegisterRequest;
 use Illuminate\Support\Facades\Validator;
 
@@ -82,8 +83,9 @@ class AuthController extends Controller
     protected function respondWithToken($token)
     {
         return response()->json([
-            'access_token' => $token,
-            'token_type' => 'bearer',
+            'name' => Auth::user()->name,
+            'token' => $token,
+            'token_type' => 'Bearer',
             'expires_in' => auth()->factory()->getTTL() * 60
         ]);
     }
