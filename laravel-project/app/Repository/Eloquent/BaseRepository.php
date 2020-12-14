@@ -40,6 +40,6 @@ class BaseRepository implements EloquentRepositoryInterface
 
     public function delete($id)
     {
-        return $this->find($id)->delete();
+        return $this->model->find($id)->delete();
     }
 }
