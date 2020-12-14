@@ -25,8 +25,13 @@ class RestaurantRequest extends FormRequest
     {
         return [
             'name' => ['required', 'string', 'max:255'],
+            'category' => ['required', 'string', 'max:255'],
             'address' => ['required', 'string', 'max:255'],
-            'description' => ['required', 'string', 'max:255'],
+            'google_point' => ['required', 'max:255'],
+            'naver_point' => ['required', 'max:255'],
+            'dining_point' => ['required', 'max:255'],
+            'lat' => ['required', 'max:255'],
+            'lng' => ['required', 'max:255'],
         ];
     }
 }
