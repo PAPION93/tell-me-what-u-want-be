@@ -1,6 +1,5 @@
 <?php
 
-use Illuminate\Support\Facades\Hash;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -21,18 +20,17 @@ Route::prefix('v1')->namespace('Api\V1')->group(function () {
         Route::post('logout', 'AuthController@logout');
         Route::post('refresh', 'AuthController@refresh');
 
-        // Route::apiResource('users', 'UserController');
-
         Route::apiResource('restaurants', 'RestaurantController');
         Route::apiResource('images', 'ImageController')->only(['index', 'store', 'show']);
 
         Route::group(['middleware' => 'jwt.auth'], function () {
-            Route::get('users/me/favs', 'UserController@getFavs');
-            Route::put('users/me/favs', 'UserController@updateFavs');
+            Route::apiResource('users', 'UserController');
+            Route::get('users/me/likes', 'RestaurantLikeController@index');
+            Route::post('restaurants/{restaurant}/likes', 'RestaurantLikeController@store');
+            Route::delete('restaurants/{restaurant}/likes', 'RestaurantLikeController@destroy');
         });
 
         Route::get('test', function () {
-            return Hash::make('123') . '///' . bcrypt('123') ;
         });
     });
 });
