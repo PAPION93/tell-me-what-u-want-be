@@ -9,10 +9,6 @@ use Illuminate\Support\Facades\Storage;
 
 class ImageApiUnitTest extends TestCase
 {
-    public function tearDown(): void
-    {
-    }
-
     /** @test */
     public function it_can_create_an_png()
     {

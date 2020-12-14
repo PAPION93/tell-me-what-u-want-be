@@ -33,7 +33,7 @@ class AuthTest extends TestCase
         ]);
         $response->assertStatus(200)
                 ->assertJsonStructure([
-                    'access_token',
+                    'token',
                     'token_type',
                     'expires_in',
                 ]);
@@ -45,11 +45,11 @@ class AuthTest extends TestCase
     {
         $response = $this->login();
 
-        $this->withHeaders(['Authorization' => 'Bearer ' . $response['access_token'], ]);
+        $this->withHeaders(['Authorization' => 'Bearer ' . $response['token'], ]);
         $response = $this->json('POST', '/api/v1/refresh', []);
         $response->assertStatus(200)
         ->assertJsonStructure([
-            'access_token',
+            'token',
             'token_type',
             'expires_in',
         ]);
@@ -59,7 +59,7 @@ class AuthTest extends TestCase
     public function logout()
     {
         $response = $this->login();
-        $this->withHeaders(['Authorization' => 'Bearer ' . $response['access_token'], ]);
+        $this->withHeaders(['Authorization' => 'Bearer ' . $response['token'], ]);
         $response = $this->json('POST', '/api/v1/logout', []);
         $response->assertStatus(200)
         ->assertJson([

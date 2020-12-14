@@ -3,27 +3,32 @@
 namespace Tests\Feature;
 
 use Tests\TestCase;
-use App\Models\Restaurant;
 use App\Models\Image;
+use App\Models\Restaurant;
 
 class RestaurantApiUnitTest extends TestCase
 {
-    public function test_it_can_create_an_restaurant()
+    /** @test */
+    public function it_can_create_an_restaurant()
     {
         $data = [
             'name' => $this->faker->name,
+            'category' => $this->faker->name,
             'address' => $this->faker->address,
+            'google_point' => $this->faker->randomFloat(1, 0, 5),
+            'naver_point' => $this->faker->randomFloat(1, 0, 5),
+            'dining_point' => $this->faker->randomFloat(1, 0, 5),
             'lat' => $this->faker->latitude,
             'lng' => $this->faker->longitude,
-            'description' => $this->faker->sentence,
         ];
 
-        $this->post('/api/v1/restaurants', $data)
-            ->assertStatus(201)
-            ->assertJson($data);
+        $res = $this->post('/api/v1/restaurants', $data)
+                    ->assertStatus(201)
+                    ->assertJson($data);
     }
 
-    public function test_get_restaurants()
+    /** @test */
+    public function it_can_get_restaurants()
     {
         Restaurant::factory()->count(5)->create();
 
@@ -34,14 +39,18 @@ class RestaurantApiUnitTest extends TestCase
                 'data' => [[
                     'id',
                     'name',
+                    'category',
                     'address',
+                    'google_point',
+                    'naver_point',
+                    'dining_point',
                     'lat',
                     'lng',
-                    'description',
                 ]]]);
     }
 
-    public function test_get_restaurants_with_images()
+    /** @test */
+    public function it_can_get_restaurants_with_images()
     {
         Restaurant::factory()
             ->create()
@@ -59,10 +68,11 @@ class RestaurantApiUnitTest extends TestCase
                 'data' => [[
                     'id',
                     'name',
+                    'category',
                     'address',
-                    'lat',
-                    'lng',
-                    'description',
+                    'google_point',
+                    'naver_point',
+                    'dining_point',
                     'images' => [[
                         'id',
                         'restaurant_id',
