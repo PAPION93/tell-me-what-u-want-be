@@ -16,6 +16,11 @@ class LikeService
         $this->restaurantRepo = $restaurantRepo;
     }
 
+    public function likes()
+    {
+        return $this->likeRepo->get();
+    }
+
     public function like($restaurantId)
     {
         $restaurant = $this->restaurantRepo->find($restaurantId);

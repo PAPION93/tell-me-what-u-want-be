@@ -25,9 +25,9 @@ Route::prefix('v1')->namespace('Api\V1')->group(function () {
 
         Route::group(['middleware' => 'jwt.auth'], function () {
             Route::apiResource('users', 'UserController');
-            Route::get('users/me/likes', 'RestaurantLikeController@index');
-            Route::post('restaurants/{restaurant}/likes', 'RestaurantLikeController@store');
-            Route::delete('restaurants/{restaurant}/likes', 'RestaurantLikeController@destroy');
+            Route::get('users/me/likes', 'LikeController@index');
+            Route::post('restaurants/{restaurant}/likes', 'LikeController@store');
+            Route::delete('restaurants/{restaurant}/likes', 'LikeController@destroy');
         });
 
         Route::get('test', function () {

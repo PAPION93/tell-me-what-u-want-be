@@ -19,6 +19,10 @@ class RestaurantRepository extends BaseRepository implements RestaurantRepositor
 
     public function get()
     {
-        return $this->model->with('images')->paginate(20);
+        return $this->model->with('images')
+            ->withCount(['likes' => function ($query) {
+                $query->where('user_id', auth()->id());
+            }])
+        ->paginate();
     }
 }

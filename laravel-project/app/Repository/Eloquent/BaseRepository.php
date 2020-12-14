@@ -28,29 +28,16 @@ class BaseRepository implements EloquentRepositoryInterface
         return $this->model->all();
     }
 
-    /**
-    * @param array $attributes
-    *
-    * @return Model
-    */
     public function create(array $attributes): Model
     {
         return $this->model->create($attributes);
     }
 
-    /**
-    * @param $id
-    * @return Model
-    */
     public function find($id): ?Model
     {
         return $this->model->findOrFail($id);
     }
 
-    /**
-    * @param $id
-    * @return Model
-    */
     public function delete($id)
     {
         return $this->find($id)->delete();

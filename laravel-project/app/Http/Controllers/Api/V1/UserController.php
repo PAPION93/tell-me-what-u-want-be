@@ -82,14 +82,4 @@ class UserController extends Controller
     {
         //
     }
-
-    public function getFavs()
-    {
-        return 1;
-    }
-
-    public function updateFavs()
-    {
-        return 2;
-    }
 }

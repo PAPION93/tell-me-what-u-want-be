@@ -4,7 +4,5 @@ namespace App\Repository;
 
 interface LikeRepositoryInterface
 {
-    public function likes();
-
-    public function isLiked();
+    public function get();
 }
