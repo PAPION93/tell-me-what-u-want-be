@@ -2,9 +2,11 @@
 
 namespace App\Repository;
 
+use Illuminate\Http\Request;
+
 interface RestaurantRepositoryInterface
 {
-    public function get();
+    public function get(Request $request);
 
     public function getLikes();
 }
