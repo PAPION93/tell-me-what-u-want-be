@@ -37,8 +37,10 @@ class RestaurantRepository extends BaseRepository implements RestaurantRepositor
 
     public function getLikes()
     {
-        return $this->model->whereHas('likes', function (Builder $query) {
+        return $this->model->with('images')
+        ->whereHas('likes', function (Builder $query) {
             $query->where('user_id', auth()->id());
-        })->paginate();
+        })
+        ->paginate();
     }
 }
