@@ -3,6 +3,7 @@
 namespace App\Http\Controllers\Api\V1;
 
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Log;
 use App\Http\Controllers\Controller;
 use App\Http\Requests\RestaurantRequest;
 use App\Repository\RestaurantRepositoryInterface;
@@ -23,6 +24,7 @@ class RestaurantController extends Controller
      */
     public function index(Request $request)
     {
+        Log::alert($this->restaurantRepository->get($request));
         return $this->restaurantRepository->get($request);
     }
 

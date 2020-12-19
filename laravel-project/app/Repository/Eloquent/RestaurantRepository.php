@@ -26,8 +26,8 @@ class RestaurantRepository extends BaseRepository implements RestaurantRepositor
                         ->googlePoint($request->google_point)
                         ->naverPoint($request->naver_point)
                         ->diningPoint($request->dining_point)
-                        ->lat($request->lat)
-                        ->lng($request->lng)
+                        ->lat($request->northLat, $request->southLat)
+                        ->lng($request->eastLng, $request->westLng)
                         ->with('images')
                         ->withCount(['likes' => function ($query) {
                             $query->where('user_id', auth()->id());

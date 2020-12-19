@@ -64,20 +64,20 @@ class Restaurant extends Model
     /**
      * Scope a query to latitude
      */
-    public function scopeLat($query, $lat)
+    public function scopeLat($query, $northLat, $southLat)
     {
-        if ($lat) {
-            return $query->whereBetween('lat', [$lat - 0.0005, $lat + 0.0005]);
+        if ($northLat && $southLat) {
+            return $query->whereBetween('lat', [$northLat, $southLat]);
         }
     }
 
     /**
      * Scope a query to latitude
      */
-    public function scopeLng($query, $lng)
+    public function scopeLng($query, $eastLng, $westLng)
     {
-        if ($lng) {
-            return $query->whereBetween('lng', [$lng - 0.0005, $lng + 0.0005]);
+        if ($eastLng && $westLng) {
+            return $query->whereBetween('lng', [$eastLng, $westLng]);
         }
     }
 
