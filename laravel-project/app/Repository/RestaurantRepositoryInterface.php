@@ -9,4 +9,6 @@ interface RestaurantRepositoryInterface
     public function get(Request $request);
 
     public function getLikes();
+
+    public function getBlog($query);
 }

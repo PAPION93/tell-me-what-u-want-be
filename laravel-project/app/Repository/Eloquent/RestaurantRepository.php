@@ -4,6 +4,7 @@ namespace App\Repository\Eloquent;
 
 use App\Models\Restaurant;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Http;
 use Illuminate\Database\Eloquent\Builder;
 use App\Repository\RestaurantRepositoryInterface;
 
@@ -42,5 +43,20 @@ class RestaurantRepository extends BaseRepository implements RestaurantRepositor
             $query->where('user_id', auth()->id());
         })
         ->paginate();
+    }
+
+    public function getBlog($query)
+    {
+        $response = Http::withHeaders([
+            'X-Naver-Client-Id' => config('api.x_naver_client_id'),
+            'X-Naver-Client-Secret' => config('api.x_naver_client_secret'),
+        ])->get('https://openapi.naver.com/v1/search/blog.json', [
+            'query' => $query,
+            'display' => 5,
+            'start' => 1,
+            'sort' => 'sim',
+        ]);
+
+        return $response = json_decode($response, true);
     }
 }

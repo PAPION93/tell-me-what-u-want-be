@@ -46,7 +46,19 @@ class RestaurantController extends Controller
      */
     public function show($id)
     {
-        return $this->restaurantRepository->find($id);
+        $restaurant = $this->restaurantRepository->find($id);
+
+        $query = $restaurant->name;
+        if ($restaurant->address) {
+            $dong = explode(' ', $restaurant->address)[2];
+            $query = $dong . ' ' . $restaurant->name;
+        }
+        $blogs = $this->restaurantRepository->getBlog($query);
+
+        return response()->json([
+            'restaurant' => $restaurant,
+            'naver_blogs' => $blogs,
+        ]);
     }
 
     /**
