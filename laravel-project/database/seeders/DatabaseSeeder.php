@@ -18,7 +18,7 @@ class DatabaseSeeder extends Seeder
     public function run()
     {
         Restaurant::factory()
-            ->count(10)
+            ->count(20)
             ->create()
             ->each(function ($restaurant) {
                 Image::factory()

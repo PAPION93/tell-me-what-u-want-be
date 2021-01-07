@@ -28,6 +28,7 @@ class RestaurantFactory extends Factory
             'google_point' => $this->faker->randomFloat(1, 0, 5),
             'naver_point' => $this->faker->randomFloat(1, 0, 5),
             'dining_point' => $this->faker->randomFloat(1, 0, 5),
+            'kakao_point' => $this->faker->randomFloat(1, 0, 5),
             'lat' => $this->faker->randomFloat(6, 35.855000, 35.945000),
             'lng' => $this->faker->randomFloat(6, 128.607168, 128.667168),
         ];
